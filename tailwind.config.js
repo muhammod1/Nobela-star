@@ -6,7 +6,8 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          blue: "#0E8ACB",
+          grey: "#92929D",
+          pink: "#FF8A62",
         },
         screens: {
           phone: "279px",
