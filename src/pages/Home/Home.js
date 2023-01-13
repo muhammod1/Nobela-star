@@ -1,10 +1,13 @@
-import React from 'react'
-import './home.scss'
+import React from "react";
+import "./home.scss";
+import Deshell from "../../components/Deshell";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <Deshell />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

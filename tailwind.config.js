@@ -8,6 +8,7 @@ module.exports = {
         colors: {
           grey: "#92929D",
           pink: "#FF8A62",
+          blue: "#364670",
         },
         screens: {
           phone: "279px",
