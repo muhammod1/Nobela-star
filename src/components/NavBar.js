@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai'
 import logo from "../assets/Logo.png"
-import Button from '../common/Button/Button'
+import RedButton from '../common/Button/RedButton'
 import { NavMenu } from "../Data/NavData"
 import MobileNav from './MobileNav'
 
@@ -10,7 +10,7 @@ const NavBar = () => {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <nav className='p-3 flex justify-between w-[92%] mx-auto max-[1400px] '>
+    <nav className='p-3 flex justify-between w-[95%] mx-auto max-w-[1430px] '>
       <div>
         <img  className='w-[179px] h-[64px]' src={logo} alt="logo" />
       </div>
@@ -25,7 +25,7 @@ const NavBar = () => {
               {nav.name}
             </NavLink>
           ))}
-          <Button text="Join Us" />
+          <RedButton text="Join Us" />
         </div>
       </div>
       <div onClick={(() => setIsActive(!isActive))} className='my-auto block laptop:hidden '>
