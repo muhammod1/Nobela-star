@@ -2,7 +2,7 @@ import React from 'react'
 
 const TitleHeader = ({ text }) => {
   return (
-    <div className='leading-[60px] mb-5 text-blue text-[50px] font-[600] '>
+    <div className='leading-[55px] mb-4 text-blue text-[42px] font-[600] '>
       {text}
     </div>
   )

@@ -7,10 +7,10 @@ import NavBar from '../components/NavBar'
 const CreateRoutes = () => {
   return (
     <div className='relative'>
-      <div className='fixed w-full bg-white'>
+      <div className='fixed w-full bg-white z-50'>
         <NavBar />
       </div>
-      <div className='pt-20'>
+      <div className='pt-20 '>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/cart' element={<Cart/>}></Route>

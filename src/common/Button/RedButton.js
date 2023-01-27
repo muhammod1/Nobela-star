@@ -1,6 +1,6 @@
 import React from "react";
 
-const RedButton = ({text, bg}) => {
+const RedButton = ({text}) => {
   return (
     <button className="bg-pink text-[white] py-2 px-5 rounded-lg">
       {text}

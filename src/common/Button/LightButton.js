@@ -1,6 +1,6 @@
 import React from "react";
 
-const RedButton = ({text, bg}) => {
+const LightButton = ({text}) => {
   return (
     <button className=" text-pink py-2 px-5 border-pink border-2 rounded-lg">
       {text}
@@ -8,4 +8,4 @@ const RedButton = ({text, bg}) => {
   );
 };
 
-export default RedButton;
+export default LightButton;

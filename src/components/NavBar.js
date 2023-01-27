@@ -10,7 +10,7 @@ const NavBar = () => {
   const [isActive, setIsActive] = useState(false)
 
   return (
-    <nav className='p-3 flex justify-between w-[95%] mx-auto max-w-[1430px] '>
+    <nav className='p-3 flex justify-between w-[95%] mx-auto max-w-[1430px]'>
       <div>
         <img  className='w-[179px] h-[64px]' src={logo} alt="logo" />
       </div>
