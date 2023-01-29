@@ -15,8 +15,8 @@ const Deshell = () => {
             <div className="mt-10" />
             <LightButton text="Make a booking today"/>
         </div>
-        <div className="w-[90%] mt-20 laptop:mt-0 laptop:w-[50%]">
-            <img src={deshell} className="mx-auto laptop:ml-auto h-[350px]" alt="deshell" />
+        <div className="w-full mt-20 laptop:mt-0 laptop:w-[50%]">
+            <img src={deshell} className="mx-auto w-full laptop:ml-auto h-[300px] tablet:h-[350px]" alt="deshell" />
         </div>
       </div>
     </div>
