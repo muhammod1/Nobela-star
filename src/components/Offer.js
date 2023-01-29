@@ -17,7 +17,7 @@ const Offer = () => {
         </div>
       <div className="flex flex-wrap gap-10 justify-around mt-4">
         {offerData?.map((item) => (
-            <div key={item.id} className="relative rounded-[24px] p-8 shadow-lg w-[85%] mobile:w-[70%] tablet:w-[400px]">
+            <div key={item.id} className=" mt-8 relative rounded-[24px] p-8 shadow-lg w-[90%] mobile:w-[85%] tablet:w-[400px]">
                 {item.active === true ? (
                     <img className='absolute right-0 top-0 w-[60px] h-[60px]' src={coconut} alt="coco"/>
                 ) : (

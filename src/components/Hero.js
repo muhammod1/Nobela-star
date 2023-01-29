@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
     <div className=" absolute top-0 h-full w-full bg-pink-rgba"/>
       <div className=" absolute top-0 h-full w-full flex  ">
-        <div className=" mx-auto mt-[80px] tablet:mt-[160px] w-[90%] max-w-[900px]">
+        <div className=" mx-auto mt-[110px] tablet:mt-[160px] w-[90%] max-w-[900px]">
           <div className="text-[white] w-full tablet:w-[460px]">
             <p className="text-[34px] tablet:text-[44px] font-[700] ">Everything coconut -</p>
             <p className="text-[30px] tablet:text-[44px] font-[400] italic">All in one place</p>
@@ -17,7 +17,7 @@ const Hero = () => {
               Need coconuts and any coconut products and stakeholders in the
               coconut ecosystem? You are in the right place
             </p>
-            <div className=" flex flex-wrap gap-4">
+            <div className=" flex flex-wrap gap-6 tablet:gap-7">
               <button className="font-[500] text-black py-2 px-5 bg-white rounded-lg">
               Join Us
               </button>
