@@ -21,7 +21,7 @@ const Hero = () => {
               <button className="font-[500] text-black py-2 px-5 bg-white rounded-lg">
               Join Us
               </button>
-              <button className="font-[500] py-2 px-5 bg-transparent border-2 rounded-lg">
+              <button className="font-[500] ml-6 py-2 px-5 bg-transparent border-2 rounded-lg">
               Learn more!
               </button>
             </div>
