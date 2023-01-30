@@ -16,25 +16,18 @@ export const productData = [
     id: 1,
   },
   {
-    name: "Coconut Husk",
+    name: "Coconut Shell",
     img: coconutShell,
     scale: "1Kg",
     amount: "₦60",
     id: 2,
   },
   {
-    name: "Coconut Husk",
+    name: "Coconut Fruit/Embryo",
     img: coconutFruit,
     scale: "1unit",
     amount: "₦300",
     id: 3,
-  },
-  {
-    name: "Coconut Husk",
-    img: deshuskCoconut,
-    scale: "1unit",
-    amount: "$21.9",
-    id: 4,
   },
 ];
 

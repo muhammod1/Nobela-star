@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className='mt-6 flex justify-between gap-20 laptop:gap-0 flex-col laptop:flex-row'>
             <div>
-                <div className='font-[700] text-[32px] text-blue mb-5'>Coconuto</div>
+                <div className='font-[700] text-[32px] text-blue mb-5'>Coconoto</div>
                 <div>
                     <p className='text-blue w-[90%] font-semibold'>Alpha Drive gives you secure access to all your files.</p>
                 </div>
