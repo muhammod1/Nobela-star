@@ -1,19 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import Cart from '../pages/Cart/Cart';
-import Home from '../pages/Home/Home';
-import NavBar from '../components/NavBar'
+import SpeechRec from '../pages/SpeechRec/SpeechRec';
+import ImgGen from '../pages/ImgGen/ImgGen';
 
 const CreateRoutes = () => {
   return (
     <div className='relative'>
-      <div className='fixed w-full bg-white z-50'>
-        <NavBar />
-      </div>
-      <div className='pt-20 '>
+      <div className=''>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/cart' element={<Cart/>}></Route>
+          <Route path='/' element={<ImgGen/>}></Route>
+          <Route path='/speechRec' element={<SpeechRec/>}></Route>
         </Routes>
 
       </div>
