@@ -86,7 +86,7 @@ const ImgGen = () => {
         </div>
         <div className=" absolute top-0 h-full w-full bg-linear-bg" />
         <div className=" absolute top-0 h-full w-full flex  ">
-          <div className="relative mx-auto  flex top-[35%] mobile:top-[30%] w-[97%] max-w-[700px]">
+          <div className="relative mx-auto  flex top-[35%] mobile:top-[30%] w-[92%] max-w-[700px]">
             <form onSubmit={handleSubmit} className="mx-auto w-full">
               <div className="flex flex-col">
                 <p className="text-[#fff] mobile:mx-auto mb-4 text-[18px] mobile:text-[28px] font-[700]">
