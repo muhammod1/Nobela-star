@@ -101,15 +101,6 @@ const ImgGen = () => {
                       type="text"
                     />
                   </div>
-                  {/* <div className="w-[35%]">
-                    <input
-                      onChange={noOfPics}
-                      name="deliveryNumber"
-                      className="py-1 px-2 mobile:py-1.5 w-full  mobile:px-3 border-2 border-[#fff] rounded-md outline-none bg-[#fff]"
-                      placeholder="Number of Images"
-                      type="text"
-                    />
-                  </div> */}
                   <div className="w-fit mobile:w-[25%]">
                     <input
                       type="submit"
