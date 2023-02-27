@@ -86,35 +86,35 @@ const ImgGen = () => {
         </div>
         <div className=" absolute top-0 h-full w-full bg-linear-bg" />
         <div className=" absolute top-0 h-full w-full flex  ">
-          <div className="relative mx-auto  flex top-[35%] mobile:top-[30%] w-[90%] max-w-[900px]">
-            <form onSubmit={handleSubmit} className="mx-auto">
+          <div className="relative mx-auto  flex top-[35%] mobile:top-[30%] w-[97%] max-w-[700px]">
+            <form onSubmit={handleSubmit} className="mx-auto w-full">
               <div className="flex flex-col">
                 <p className="text-[#fff] mobile:mx-auto mb-4 text-[18px] mobile:text-[28px] font-[700]">
                   Free HD Stock Footage !
                 </p>
-                <div className="flex gap-4 flex-wrap">
-                  <div className="">
+                <div className="flex gap-4 justify-center flex-wrap">
+                  <div className="mobile:w-[70%]">
                     <input
                       onChange={handleChange}
-                      className="py-1 px-2 mobile:py-1.5 w-[100px] tablet:w-[150px]  mobile:px-3 border-2 border-[#fff] rounded-lg outline-none bg-[#fff]"
+                      className="py-1 px-2 mobile:py-1.5 w-full mobile:px-3 border-2 border-[#fff] rounded-md outline-none bg-[#fff]"
                       placeholder="Search..."
                       type="text"
                     />
                   </div>
-                  <div className="">
+                  {/* <div className="w-[35%]">
                     <input
                       onChange={noOfPics}
                       name="deliveryNumber"
-                      className="py-1 px-2 mobile:py-1.5 w-[100px] tablet:w-[150px]  mobile:px-3 border-2 border-[#fff] rounded-lg outline-none bg-[#fff]"
-                      placeholder="No of Images"
+                      className="py-1 px-2 mobile:py-1.5 w-full  mobile:px-3 border-2 border-[#fff] rounded-md outline-none bg-[#fff]"
+                      placeholder="Number of Images"
                       type="text"
                     />
-                  </div>
-                  <div className="">
+                  </div> */}
+                  <div className="w-fit mobile:w-[25%]">
                     <input
                       type="submit"
                       value="Search"
-                      className=" hover:bg-[#fff] hover:text-[#417ac0] font-semibold py-1 px-3 mobile:py-1.5 mobile:px-4 bg-[#417ac0] transition border-2 hover:border-[#417ac0] text-[#fff] rounded-lg cursor-pointer"
+                      className=" hover:bg-[#fff] w-full hover:text-[#417ac0] font-semibold py-1 px-4 mobile:py-1.5 mobile:px-5 bg-[#417ac0] transition border-2 hover:border-[#417ac0] text-[#fff] rounded-md cursor-pointer"
                     />
                   </div>
                 </div>

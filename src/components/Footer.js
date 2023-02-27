@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="max-w-[1400px] w-[92%] mx-auto mt-40 mb-16">
       <div className="mt-6 flex pb-8 border-[black] border-b-2 justify-between gap-20 laptop:gap-0 flex-col laptop:flex-row">
         <div>
-          <div className="font-[700] text-[26px] w-[100px] leading-7">
+          <div className="font-[700] text-[24px] w-[100px] leading-7">
             Figma Design
           </div>
         </div>
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <div className="font-[700] text-[26px] text-right w-[100px] leading-7">
+          <div className="font-[700] text-[24px] text-right w-[100px] leading-7">
             Github Repository
           </div>
         </div>

@@ -8,13 +8,13 @@ const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="p-2 bg-transparent flex justify-between w-[95%] mx-auto max-w-[1430px]">
+    <nav className="p-2 bg-transparent flex justify-between w-[97%] mx-auto max-w-[1430px]">
       <div>
-        <img className="w-[150px] h-[70px]" src={logo} alt="logo" />
+        <img className=" h-[60px] mr-auto w-fit" src={logo} alt="logo" />
       </div>
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
-          <BlueButton text="Join Us" />
+          <BlueButton text="Contact Us" />
         </div>
       </div>
       <div
