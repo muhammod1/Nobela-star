@@ -5,7 +5,7 @@ import NavBar from "../../components/NavBar";
 
 const ImgGen = () => {
   const [search, setSearch] = useState("nature");
-  const [perPage, setPerPage] = useState("");
+  const [perPage, setPerPage] = useState("20");
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -89,7 +89,7 @@ const ImgGen = () => {
           <div className="relative mx-auto  flex top-[35%] mobile:top-[30%] w-[92%] max-w-[700px]">
             <form onSubmit={handleSubmit} className="mx-auto w-full">
               <div className="flex flex-col">
-                <p className="text-[#fff] mobile:mx-auto mb-4 text-[18px] mobile:text-[28px] font-[700]">
+                <p className="text-[#fff] mx-auto mb-4 text-[20px] mobile:text-[25px] table:text-[28px] font-[700]">
                   Free HD Stock Footage !
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">
@@ -123,14 +123,15 @@ const ImgGen = () => {
           ) : (
             <>
         <p className="text-[22px] font-semibold mb-8 ">Free HD photos</p>
-            <div className="flex gap-6 justify-center flex-wrap">
+            <div className="flex gap-4 justify-center flex-wrap">
 
               {result.map((search) => (
-                <div className="rounded-[20px] overflow-hidden">
+                <div className="rounded-none h-fit tablet:rounded-[20px] w-fit bg-pink overflow-hidden">
                   <img
                     variant="top"
-                    width={"300px"}
-                    src={search.src.portrait}
+                    // width={"300px"}
+                    className="w-[45%] tablet:w-[300px]"
+                    src={search.src.original}
                     alt={search.photographer}
                   />
                 </div>

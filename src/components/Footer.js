@@ -9,35 +9,35 @@ const Footer = () => {
   return (
     <div className="max-w-[1400px] w-full px-4 mx-auto mt-40 mb-16">
       <div className="w-[97%] mx-auto">
-      <div className="mt-6 flex pb-8 border-[black] border-b-2 justify-between">
-        <div>
-          <div className=" font-[700] text-[18px] tablet:text-[24px] w-[100px] leading-7">
-            Figma Design
+      <div className="mt-6 flex pb-4 tablet:pb-8 border-[black] border-b-2 justify-between">
+        <div className="">
+          <div className=" font-[700]  text-left w-fit text-[10px] mobile:text-[14px] tablet:text-[16px] leading-5">
+            Figma <p>Design</p>
           </div>
         </div>
         <div>
-          <div className="relative bottom-2 flex gap-2 h-[70px] text-[14px] font-semibold">
+          <div className="relative bottom-2 flex gap-1.5 h-[50px]  text-[7.5px] tablet:text-[12px] font-semibold">
             <p className="mt-auto">UNIVERSITY OF</p>
-            <img src={uniLogo} alt="" className=" relative bottom-3 w-[50px] h-[100px]" />
+            <img src={uniLogo} alt="" className=" relative tablet:bottom-0 bottom-0 w-[30px] mobile:w-[30px] h-[50px] mobile:h-[40px]" />
             <p className="mt-auto">ILORIN, KWARA.</p>
           </div>
         </div>
 
         <div>
-          <div className="font-[700] text-[18px] tablet:text-[24px] text-right w-[100px] leading-7">
-            Github Repository
+          <div className="font-[700] text-[10px] mobile:text-[14px] tablet:text-[16px] text-right leading-5">
+            Github <p>Repository</p>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-10 tablet:mt-166">
         <div>
           <div className="mx-auto w-fit flex gap-2">
-            <img className="h-[30px] w-[40px]" src={git} alt="" />
-            <img className="h-[30px] w-[40px]" src={twitter} alt="" />
-            <img className="h-[30px] w-[40px]" src={figma} alt="" />
-            <img className="h-[30px] w-[40px]" src={slack} alt="" />
+            <img className="tablet:h-[30px] h-[20px] w-[20px]  tablet:w-[40px]" src={git} alt="" />
+            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={twitter} alt="" />
+            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={figma} alt="" />
+            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={slack} alt="" />
           </div>
-          <p className="text-[14px] mt-4 font-semibold">© Team, Fuad & Muhammod. 2023. We love Unilorin</p>
+          <p className="text-[10px] tablet:text-[10px] mt-4 font-semibold text-center">© Team, Fuad & Muhammod. 2023. We love Unilorin</p>
         </div>
       </div>
       </div>
