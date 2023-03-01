@@ -50,7 +50,7 @@ const SpeechRec = () => {
         <NavBar link="/" />
       </div>
       <div className="flex h-[70vh]">
-        <div className="my-auto mx-auto ">
+        <div className=" tablet:my-auto mx-auto ">
           <form className="mt-4 tablet:mt-16 w-full mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] gap-5 mx-auto">
             <div className=" mx-auto w-fit">
               <div className="flex justify-between items-center w-full">
@@ -86,13 +86,13 @@ const SpeechRec = () => {
                   className={
                     start
                       ? " w-[20px] h-[16px] relative top-[-2px]"
-                      : "py-2 px-3 rounded-md hover:bg-white w-[40px] h-[45px] text-[#19bf5e]"
+                      : "py-2 px-3 rounded-md w-[40px] h-[45px] text-[#19bf5e]"
                   }
                 />
               </button>
             </div>
           </form>
-          <div className="bg-[#e6e5e5] h-36 max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px]">
+          <div className="bg-[#e6e5e5] h-[300px] max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px]">
             <p className="text-[12px] font-semibold mx-3 py-2 text-black ">
               {transcript}
             </p>
@@ -118,7 +118,7 @@ const SpeechRec = () => {
               className={
                 start
                   ? ""
-                  : "bg-red-500 flex gap-2 items-center hover:opacity-80 text-[white] py-2 px-4 rounded-lg"
+                  : "bg-red-500 flex gap-2 items-center hover:opacity-50 text-[white] py-2 px-4 rounded-lg"
               }
             >
               {start ? "" : <span className="">Stop</span>}
