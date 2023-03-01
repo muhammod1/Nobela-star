@@ -1,70 +1,79 @@
-import coconutFruit from "../assets/coconutFruit.png";
-import coconutHusk from "../assets/coconutHusk.png";
-import coconutShell from "../assets/coconutShell.png";
-import deshuskCoconut from "../assets/deshuskCoconut.png";
-import marketCoco from "../assets/marketCoco.svg";
-import proCoco from "../assets/proCoco.svg";
-import processingCoco from "../assets/processingCoco.svg";
-import commCoco from "../assets/commCoco.svg";
+import { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10,p11, p12, p13, p14, p15, p16, p17, p18 } from "../assets/preloaded"
 
-export const productData = [
+
+
+
+export const preloaded = [
   {
-    name: "Coconut Husk",
-    img: coconutHusk,
-    scale: "1Kg",
-    amount: "₦60",
+    img: p1,
     id: 1,
   },
   {
-    name: "Coconut Shell",
-    img: coconutShell,
-    scale: "1Kg",
-    amount: "₦60",
+    img: p2,
     id: 2,
   },
   {
-    name: "Coconut Fruit/Embryo",
-    img: coconutFruit,
-    scale: "1unit",
-    amount: "₦300",
+    img: p3,
     id: 3,
   },
-];
-
-export const offerData = [
   {
-    name: "Processed Coconuts",
-    img: proCoco,
-    content: "You can now order dehusked or deshelled coconuts for your business",
-    btn: "Make a booking!",
-    id: 1,
-    active: true
-  },
-  {
-    name: "Coconut Processing",
-    img: processingCoco,
-    content: "Explore our dehusking and deshelling servcices at the best prices available",
-    btn: "Request a service.",
-    id: 2,
-    active: false
-
-  },
-  {
-    name: "Coconut marketplace",
-    img: commCoco,
-    content: "Explore our large catalogue of diffrent coconut products different vendors around the nation.",
-    btn: "Start Shopping",
-    id: 3,
-    active: false
-
-  },
-  {
-    name: "Community",
-    img: marketCoco,
-    content: "We have aggregated a commuity of coconut farmers, processor and other players in value chain",
-    btn: "Let’s network.",
+    img: p4,
     id: 4,
-    active: false
-
+  },
+  {
+    img: p5,
+    id: 5,
+  },
+  {
+    img: p6,
+    id: 6,
+  },
+  {
+    img: p7,
+    id: 7,
+  },
+  {
+    img: p8,
+    id: 8,
+  },
+  {
+    img: p9,
+    id: 9,
+  },
+  {
+    img: p10,
+    id: 10,
+  },
+  {
+    img: p11,
+    id: 11,
+  },
+  {
+    img: p12,
+    id: 12,
+  },
+  {
+    img: p13,
+    id: 13,
+  },
+  {
+    img: p14,
+    id: 14,
+  },
+  {
+    img: p15,
+    id:15,
+  },
+  {
+    img: p16,
+    id: 16,
+  },
+  {
+    img: p17,
+    id: 17,
+  },
+  {
+    img: p18,
+    id: 18,
   },
 ];

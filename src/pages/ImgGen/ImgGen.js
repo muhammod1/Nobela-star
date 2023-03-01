@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Masonry from "react-masonry-css";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
+import { preloaded } from "../../Data/Home";
 
 const ImgGen = () => {
   const [search, setSearch] = useState("nature");
-  const [perPage, setPerPage] = useState("20");
+  const [perPage, setPerPage] = useState("");
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -25,8 +27,9 @@ const ImgGen = () => {
       search +
       "&per_page=" +
       perPage;
-    const access_token = process.env.IMAGE_ACCESS_TOKEN
-      // "D9sbG8MmrhaBmSEofBqhPqhntBZL0ai6neOokjnSpD6K0cemU54LFF7P";
+    const access_token =
+      //  process.env.IMAGE_ACCESS_TOKEN
+      "D9sbG8MmrhaBmSEofBqhPqhntBZL0ai6neOokjnSpD6K0cemU54LFF7P";
     axios
       .get(url, {
         headers: {
@@ -39,6 +42,12 @@ const ImgGen = () => {
         setLoading(false);
       });
   }
+
+  const breakpoints = {
+    default: 3,
+    1100: 3,
+    700: 2,
+  };
 
   return (
     <div className="w-full">
@@ -81,8 +90,8 @@ const ImgGen = () => {
             </video>
           </div>
         </div>
-        <div className="absolute top-0 w-full bg-transparent z-50">
-          <NavBar />
+        <div className="absolute top-0 w-full bg-linear-bg z-50">
+          <NavBar link="/" />
         </div>
         <div className=" absolute top-0 h-full w-full bg-linear-bg" />
         <div className=" absolute top-0 h-full w-full flex  ">
@@ -115,30 +124,48 @@ const ImgGen = () => {
         </div>
       </div>
 
-      <div className="mt-10 p-8">
-          {loading ? (
-            <div className="flex">
-              <p className="mx-auto text-[28px] font-[700] text-center">Search and get your desire photos</p>
-            </div>
-          ) : (
-            <>
+      <div className="mt-10 py-8 px-3 tablet:px-4 max-w-[1200px] mx-auto">
         <p className="text-[22px] font-semibold mb-8 ">Free HD photos</p>
-            <div className="flex gap-4 justify-center flex-wrap">
-
+        {loading ? (
+          <>
+          <Masonry
+            breakpointCols={breakpoints}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            {preloaded.map((search) => (
+              <div
+                key={search.id}
+                className="rounded-none tablet:rounded-[20px] overflow-hidden"
+              >
+                <img variant="top" src={search.img} alt="img" />
+              </div>
+            ))}
+          </Masonry>
+          </>
+        ) : (
+          <>
+          <p className="text-[24px] tablet:text-[30px] text-center mb-8 font-bold capitalize italic">{search}</p>
+            <Masonry
+              breakpointCols={breakpoints}
+              className="my-masonry-grid"
+              columnClassName="my-masonry-grid_column"
+            >
               {result.map((search) => (
-                <div className="rounded-none h-fit tablet:rounded-[20px] w-fit bg-pink overflow-hidden">
+                <div
+                  key={search.id}
+                  className="rounded-none tablet:rounded-[20px] overflow-hidden"
+                >
                   <img
                     variant="top"
-                    // width={"300px"}
-                    className="w-[45%] tablet:w-[300px]"
                     src={search.src.original}
                     alt={search.photographer}
                   />
                 </div>
               ))}
-        </div>
-            </>
-          )}
+            </Masonry>
+          </>
+        )}
       </div>
       <Footer />
     </div>

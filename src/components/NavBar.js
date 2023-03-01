@@ -1,16 +1,22 @@
 import React, { useState } from "react";
+
 import { AiOutlineMenu } from "react-icons/ai";
+import { IoIosArrowBack } from "react-icons/io"
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import BlueButton from "../common/Button/BlueButton";
 import MobileNav from "./MobileNav";
 
-const NavBar = () => {
+const NavBar = ({ link }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="p-2 bg-transparent flex justify-between w-[97%] mx-auto max-w-[1430px]">
+    <nav className="p-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
+      <Link to={link}>
+        <IoIosArrowBack className="text-[#fff] relative -left-[15px] h-[50px] w-[40px] " />
+      </Link>
       <div>
-        <img className=" h-[60px] mr-auto w-fit" src={logo} alt="logo" />
+        <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
       </div>
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
