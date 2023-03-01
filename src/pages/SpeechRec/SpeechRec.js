@@ -92,7 +92,7 @@ const SpeechRec = () => {
               </button>
             </div>
           </form>
-          <div className="bg-[#e6e5e5] h-[300px] max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px]">
+          <div className="bg-[#e6e5e5] h-[300px] max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px] overflow-auto">
             <p className="text-[12px] font-semibold mx-3 py-2 text-black ">
               {transcript}
             </p>
