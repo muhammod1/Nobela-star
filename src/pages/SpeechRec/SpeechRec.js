@@ -55,7 +55,7 @@ const SpeechRec = () => {
       </div>
       <div className="flex h-[70vh]">
         <div className="my-auto mx-auto ">
-          <form className="mt-10 tablet:mt-24 w-full mx-auto w-[97%] tablet:w-[95%] laptop:w-[650px] gap-5 mx-auto">
+          <form className="mt-10 tablet:mt-24 w-full mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] gap-5 mx-auto">
             <div className=" mx-auto w-fit">
               <div className="flex justify-between items-center w-full">
                 <p className="text-[18px] tablet:text-[20px] tracking-wider">
@@ -96,12 +96,12 @@ const SpeechRec = () => {
               </button>
             </div>
           </form>
-          <div className="bg-[#e6e5e5] h-20 max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[97%] tablet:w-[95%] laptop:w-[650px]">
+          <div className="bg-[#e6e5e5] h-20 max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px]">
             <p className="text-[14px] font-semibold mx-3 py-2 text-black ">
               {transcript}
             </p>
           </div>
-          <div className="flex justify-between mt-4 tablet:mt-8 mx-auto w-[97%] tablet:w-[95%] laptop:w-[650px] ">
+          <div className="flex justify-between mt-4 tablet:mt-8 mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] ">
             <button
               onClick={(e) => {
                 e.preventDefault();
