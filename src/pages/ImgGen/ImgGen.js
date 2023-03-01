@@ -7,7 +7,7 @@ import { preloaded } from "../../Data/Home";
 
 const ImgGen = () => {
   const [search, setSearch] = useState("nature");
-  const [perPage, setPerPage] = useState("");
+  const [perPage, setPerPage] = useState(20);
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -37,7 +37,6 @@ const ImgGen = () => {
         },
       })
       .then((data) => {
-        console.log(data);
         setResult(data.data.photos);
         setLoading(false);
       });

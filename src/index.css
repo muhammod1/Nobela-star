@@ -39,3 +39,24 @@ body {
   background: grey;
   margin-bottom: 30px;
 }
+.rec-body{
+  background-color: #262626;
+}
+
+.beep {
+  /* animation-duration: 4s; */
+  animation: infinite 1.5s ease-in-out;
+  animation-name: rec;
+}
+
+@keyframes rec {
+  0%   {
+    transform: scale(.8);
+  }
+  50%  {
+    transform: scale(1);
+  }
+  100%  {
+    transform: scale(.8);
+  }
+}
