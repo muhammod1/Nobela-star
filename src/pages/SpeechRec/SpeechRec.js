@@ -6,6 +6,7 @@ import SpeechRecognition, {
 import NavBar from "../../components/NavBar";
 import { FaMicrophoneAlt, FaMicrophoneAltSlash } from "react-icons/fa";
 import { MdRestartAlt } from "react-icons/md";
+import FooterSec from "../../components/FooterSec";
 
 const SpeechRec = () => {
   const navigate = useNavigate();
@@ -131,6 +132,9 @@ const SpeechRec = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div>
+        <FooterSec />
       </div>
     </div>
   );

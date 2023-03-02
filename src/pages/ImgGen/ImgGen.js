@@ -37,7 +37,9 @@ const ImgGen = () => {
         },
       })
       .then((data) => {
+        console.log(data);
         setResult(data.data.photos);
+        console.log(data.data.photos);
         setLoading(false);
       });
   }
@@ -153,11 +155,12 @@ const ImgGen = () => {
               {result.map((search) => (
                 <div
                   key={search.id}
-                  className="rounded-none tablet:rounded-[20px] overflow-hidden"
+                  className="rounded-[20px] overflow-hidden"
                 >
                   <img
                     variant="top"
-                    src={search.src.original}
+                    src={search.src.large2x
+                    }
                     alt={search.photographer}
                   />
                 </div>
