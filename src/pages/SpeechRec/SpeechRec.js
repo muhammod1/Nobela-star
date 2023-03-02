@@ -48,7 +48,7 @@ const SpeechRec = () => {
   return (
     <div className="relative rec-body min-h-[100vh] max-h-fit text-[#fff]">
       <div className="w-full  z-50">
-        <NavBar link="/" />
+      <NavBar text="Use other AI" link="/image" />
       </div>
       <div className="flex min-h-[70vh] max-h-fit">
         <div className=" tablet:my-auto mx-auto ">

@@ -7,7 +7,7 @@ import slack from "../assets/slack.svg";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1400px] w-full px-4 mx-auto mt-40 mb-16">
+    <div className="max-w-[1400px] w-full px-4 mx-auto mt-[7rem] mb-12">
       <div className="w-full mx-auto">
       <div className="mt-6 flex pb-4 tablet:pb-8 border-[black] border-b-2 justify-between">
         <div className="">

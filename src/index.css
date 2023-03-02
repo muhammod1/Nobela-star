@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+} 
 
 body {
   margin: 0;
@@ -14,13 +17,12 @@ body {
 }
 
 :root{
-  --primary-color: #FF8A62;
-  --link-color: #92929D;
-  --secondary-color: #364670;
+  --primary-color: #18A0FB;
 }
 
 .active{
   color: var(--primary-color);
+  background-color: #64CCEB;
 }
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */

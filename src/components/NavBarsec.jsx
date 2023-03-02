@@ -1,26 +1,37 @@
 import React, { useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { IoIosArrowBack } from "react-icons/io"
-import { Link } from "react-router-dom";
+import { IoIosArrowBack } from "react-icons/io";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import BlueButton from "../common/Button/BlueButton";
 import MobileNav from "./MobileNav";
 
-const NavBar = ({ link, text }) => {
+const NavBarsec = ({ link }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="p-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
-      <Link to={link}>
-        <IoIosArrowBack className="text-[#fff] relative -left-[15px] h-[50px] w-[40px] " />
-      </Link>
+    <nav className="flex justify-between w-[97%] mx-auto max-w-[1430px]">
       <div>
-        <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
+        <img className=" h-[45px] mr-auto w-fit" src={logo} alt="logo" />
+      </div>
+      <div className="flex text-blue gap-5 items-center font-semibold">
+        <NavLink to="/" className="py-3 px-5">
+          Home
+        </NavLink>
+        <a href="#content" className="py-3 px-5">
+          Contact
+        </a>
+          <a 
+            href="#about"
+            className="py-3 px-5"
+          >
+            About
+          </a>
       </div>
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
-          <BlueButton text={text} />
+          {/* <BlueButton text="Test AI" /> */}
         </div>
       </div>
       <div
@@ -38,4 +49,4 @@ const NavBar = ({ link, text }) => {
   );
 };
 
-export default NavBar;
+export default NavBarsec;

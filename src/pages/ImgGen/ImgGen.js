@@ -7,7 +7,7 @@ import { preloaded } from "../../Data/Home";
 
 const ImgGen = () => {
   const [search, setSearch] = useState("nature");
-  const [perPage] = useState(20);
+  const [perPage] = useState(30);
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -92,7 +92,7 @@ const ImgGen = () => {
           </div>
         </div>
         <div className="absolute top-0 w-full bg-linear-bg z-50">
-          <NavBar link="/" />
+          <NavBar text="Use other AI" link="/speechRec" />
         </div>
         <div className=" absolute top-0 h-full w-full bg-linear-bg" />
         <div className=" absolute top-0 h-full w-full flex  ">
@@ -107,7 +107,7 @@ const ImgGen = () => {
                     <input
                       onChange={handleChange}
                       className="py-1 px-2 mobile:py-1.5 w-full mobile:px-3 border-2 border-[#fff] rounded-md outline-none bg-[#fff]"
-                      placeholder="Search..."
+                      placeholder="e.g: food, city, anything..."
                       type="text"
                     />
                   </div>
@@ -137,7 +137,7 @@ const ImgGen = () => {
             {preloaded.map((search) => (
               <div
                 key={search.id}
-                className="rounded-none tablet:rounded-[20px] overflow-hidden"
+                className="rounded-[20px] overflow-hidden"
               >
                 <img variant="top" src={search.img} alt="img" />
               </div>
