@@ -51,7 +51,7 @@ const SpeechRec = () => {
       </div>
       <div className="flex min-h-[70vh] max-h-fit">
         <div className=" tablet:my-auto mx-auto ">
-          <form className="mt-4 tablet:mt-16 w-full mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] gap-5 mx-auto">
+          <form className="mt-8 tablet:mt-16 w-full mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] gap-5 mx-auto">
             <div className=" mx-auto w-fit">
               <div className="flex justify-between items-center w-full">
                 <p className="text-[18px] tablet:text-[20px] tracking-wider">
@@ -98,7 +98,7 @@ const SpeechRec = () => {
 
             </p>
           </div>
-          <div className="flex justify-between my-2 tablet:my-4 mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] ">
+          <div className="flex justify-between my-4 mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] ">
             <button
               onClick={(e) => {
                 e.preventDefault();
