@@ -7,7 +7,7 @@ import { preloaded } from "../../Data/Home";
 
 const ImgGen = () => {
   const [search, setSearch] = useState("nature");
-  const [perPage, setPerPage] = useState(20);
+  const [perPage] = useState(20);
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,10 +15,10 @@ const ImgGen = () => {
     const search = event.target.value;
     setSearch(search);
   }
-  function noOfPics(event) {
-    const perPage = event.target.value;
-    setPerPage(perPage);
-  }
+  // function noOfPics(event) {
+  //   const perPage = event.target.value;
+  //   setPerPage(perPage);
+  // }
 
   function handleSubmit(event) {
     event.preventDefault();

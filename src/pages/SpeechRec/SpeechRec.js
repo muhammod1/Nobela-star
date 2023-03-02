@@ -45,11 +45,11 @@ const SpeechRec = () => {
   }
 
   return (
-    <div className="relative rec-body h-[100vh] text-[#fff]">
+    <div className="relative rec-body min-h-[100vh] max-h-fit text-[#fff]">
       <div className="w-full  z-50">
         <NavBar link="/" />
       </div>
-      <div className="flex h-[70vh]">
+      <div className="flex min-h-[70vh] max-h-fit">
         <div className=" tablet:my-auto mx-auto ">
           <form className="mt-4 tablet:mt-16 w-full mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] gap-5 mx-auto">
             <div className=" mx-auto w-fit">
@@ -92,12 +92,13 @@ const SpeechRec = () => {
               </button>
             </div>
           </form>
-          <div className="bg-[#e6e5e5] h-[300px] max-h-fit mt-6 tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px] overflow-auto">
-            <p className="text-[12px] font-semibold mx-3 py-2 text-black ">
+          <div className="bg-[#e6e5e5] mt-6 py-[16px] h-fit tablet:mt-10 mx-auto rounded-md w-[95%] tablet:w-[95%] laptop:w-[650px] overflow-auto">
+            <p className="text-[12px] font-semibold mx-3 h-fit text-black ">
               {transcript}
+
             </p>
           </div>
-          <div className="flex justify-between mt-4 tablet:mt-8 mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] ">
+          <div className="flex justify-between my-2 tablet:my-4 mx-auto w-[95%] tablet:w-[95%] laptop:w-[650px] ">
             <button
               onClick={(e) => {
                 e.preventDefault();
