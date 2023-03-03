@@ -34,13 +34,13 @@ const AIApp = () => {
           <div className="flex items-center gap-4 m-auto ">
             <div>
               <p className="text-[22px] text-center laptop_l:text-[18px] font-[600]">Chatgbt</p>
-              <p className="text-center text-center text-[16px] font-[500] mt-2">
+              <p className="laptop_l:hidden text-center text-center text-[16px] font-[500] mt-2">
                   Popular AI software
                 </p>
             </div>
             <Link to="" className="flex mx-auto flex-col">
               <img className="w-[250px] h-[250px]" src={chatgbt} alt="chatgbt" />
-              <p className="text-center text-[22px] font-[600] mt-3">
+              <p className="hidden laptop_l:block text-center text-[22px] font-[600] mt-3">
                 Popular AI software
               </p>
             </Link>
