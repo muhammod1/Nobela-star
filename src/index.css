@@ -46,7 +46,6 @@ body {
 }
 
 .beep {
-  /* animation-duration: 4s; */
   animation: infinite 1.5s ease-in-out;
   animation-name: rec;
 }
@@ -60,5 +59,21 @@ body {
   }
   100%  {
     transform: scale(.8);
+  }
+}
+
+#search {
+  width: 260px;
+  /* margin-bottom: 4px; */
+  position: absolute;
+  top: -1px;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 780px) {
+  #search {
+    right: 50%;
+    transform: translateX(50%);
   }
 }

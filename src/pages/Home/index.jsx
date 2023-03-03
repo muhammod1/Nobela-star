@@ -13,7 +13,7 @@ const Home = () => {
       <div className="w-full  z-50">
         <NavBarsec />
       </div>
-      <header className=" h-[400px] tablet:h-[90vh] max-h-[600px] bg-black">
+      <header className="z-50 h-[400px] tablet:h-[90vh] max-h-[600px] bg-black">
         <div className="h-full w-full flex justify-center items-center">
           <div className="flex flex-col">
             <p className="text-[#18A0FB] w-fit font-[700] text-[36px] tablet:text-[56px] text-center ">

@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { IoIosArrowBack } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import BlueButton from "../common/Button/BlueButton";
 import MobileNav from "./MobileNav";
 
 const NavBarsec = ({ link }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="flex justify-between w-[97%] mx-auto max-w-[1430px]">
+    <nav className="py-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
+
       <div>
-        <img className=" h-[45px] mr-auto w-fit" src={logo} alt="logo" />
+        <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
       </div>
-      <div className="flex text-blue gap-5 items-center font-semibold">
+      <div className="hidden laptop:flex text-[14px] text-blue gap-5 items-center font-semibold">
         <NavLink to="/" className="py-3 px-5">
           Home
         </NavLink>
@@ -28,6 +27,9 @@ const NavBarsec = ({ link }) => {
           >
             About
           </a>
+      </div>
+      <div className="bg-blue">
+
       </div>
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
