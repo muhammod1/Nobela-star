@@ -7,30 +7,30 @@ import { Link } from "react-router-dom";
 const AIApp = () => {
   return (
     <div className="bg-blue">
-      <div className="flex   text-white w-[97%] h-fit mx-auto max-w-[1430px]">
-        <div className="flex flex-col px-4 py-12 w-[50%] border-r-white border-l-0 border-t-0 border-b-0 border-4">
+      <div className="flex flex-col laptop_l:flex-row text-white w-[97%] h-fit mx-auto max-w-[1430px]">
+        <div className="flex w-fit mx-auto flex-col px-4 py-12  w-full laptop_l:w-[50%] border-b-white border-b-6 border-r-0 laptop_l:border-r-white border-l-0 border-t-0 laptop_l:border-b-0 border-4">
           <p className="font-[600] text-[32px] text-center">
             You’re in good company
           </p>
           <p className="font-[500] mx-auto mt-2 mb-5 text-[20px]  w-[350px] text-center ">
             We have created some AI software for you to checkout
           </p>
-          <div className="flex flex-wrap gap-8 mt-6">
-            <Link to="/image" className="flex mx-auto flex-col">
+          <div className="flex flex-wrap gap-16 laptop_l:gap-8 mt-6 w-fit mx-auto">
+            <Link to="/image" className="flex laptop_l:mx-auto flex-col">
               <img className="w-[180px] h-[180px]" src={picR} alt="pic" />
               <p className="text-center text-[16px] font-[500] mt-3">
                 Picture Generator AI
               </p>
             </Link>
-            <Link to="/speechRec" className="flex flex-col-reverse mx-auto">
+            <Link to="/speechRec" className="flex flex-col-reverse laptop_l:mx-auto">
               <img className="w-[180px] h-[180px]" src={VtT} alt="VtT" />
               <p className="text-center text-[16px] font-[500] mb-3">
-                Picture Generator AI
+              Voice to text AI
               </p>
             </Link>
           </div>
         </div>
-        <div className="flex flex-col px-4 py-12 w-[50%] border-l-white border-r-0 border-t-0 border-b-0 border-4">
+        <div className="flex flex-col px-4 py-12 w-full laptop_l:w-[50%] border-l-0  laptop_l:border-l-white border-r-0 border-t-0 border-b-0 border-4">
           <div className="flex items-center gap-4 m-auto ">
             <p className="text-[18px] font-[500]">Chatgbt</p>
             <Link to="" className="flex mx-auto flex-col">
