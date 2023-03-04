@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-light">
+    <div>
       <div className="w-full bg-light z-50">
         <NavBarsec />
       </div>
