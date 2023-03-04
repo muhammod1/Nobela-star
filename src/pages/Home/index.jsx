@@ -9,8 +9,8 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <div>
-      <div className="w-full  z-50">
+    <div className="bg-light">
+      <div className="w-full bg-light z-50">
         <NavBarsec />
       </div>
       <header className="z-50 h-[400px] tablet:h-[90vh] max-h-[600px] bg-black">
@@ -32,6 +32,7 @@ const Home = () => {
         <About />
         <Road />
         <Footer />
+        <div className="h-1" />
       </header>
     </div>
   );

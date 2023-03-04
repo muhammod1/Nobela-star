@@ -43,7 +43,7 @@ const note = [
 ];
 const AiCont = () => {
   return (
-    <div id="content" className="relative w-[97%] h-fit mx-auto max-w-[1430px]">
+    <div id="content" className="relative w-[97%] bg-light h-fit mx-auto max-w-[1430px]">
     <img className="hidden tablet_l:block absolute bottom-0 right-0 h-full" src={AiCon} alt="ai"/>
       <div className="py-5">
         <p className="font-[700] text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">Learning about AI [Artificial Intelligence] is made easy</p>

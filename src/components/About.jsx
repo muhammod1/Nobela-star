@@ -4,9 +4,9 @@ import muhammod from "../assets/muhammod.svg";
 
 const About = () => {
   return (
-    <div id="about" className="py-16 flex flex-col w-[97%] h-fit mx-auto max-w-[1430px]">
+    <div id="about" className="py-16 bg-light flex flex-col w-[97%] h-fit mx-auto max-w-[1430px]">
       <p className="pb-8 text-[30px] text-center font-[600] ">About</p>
-      <p className="font-[600] text:[16px] tablet:text-[18px] text-center w-[95%] laptop:w-[650px] mx-auto">
+      <p className="font-[600] text:[16px] tablet:text-[18px] text-justify w-[95%] laptop:w-[650px] mx-auto">
         This project is based on the CSC 101 (Course content) assignment given
         by Mr. LECTURER name, University of Ilorin, Kwara State, Nigeria.
       </p>
@@ -29,10 +29,10 @@ const About = () => {
 
         </div>
       </div>
-      <p className="font-[600] text:[14px] tablet:text-[16px] text-center w-[95%] laptop:w-[650px] mx-auto">
+      <p className="laptop:hidden font-[600] text:[14px] tablet:text-[16px] text-justify w-[95%] laptop:w-[650px] mx-auto">
       Both Students are from the faculty of Education, department of Educational Technology, program of Computer Science and Education.
       </p>
-      <p className="w-[95%] laptop:w-[650px] mt-4 mx-auto text-[16px] tablet:text-[18px] text-center tracking-wider italic">This Project is Done by a Team of two student which had equally contributed to the success of this project</p>
+      <p className="w-[95%] laptop:w-[650px] mt-4 mx-auto text-[16px] tablet:text-[18px] text-justify tracking-wider italic">This Project is Done by a Team of two student which had equally contributed to the success of this project</p>
     </div>
   );
 };

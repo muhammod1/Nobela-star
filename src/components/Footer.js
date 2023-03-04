@@ -7,13 +7,13 @@ import slack from "../assets/slack.svg";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1400px] w-full px-4 mx-auto mt-[7rem] mb-12">
+    <div className="max-w-[1400px] bg-light w-full px-4 mx-auto mt-[7rem] mb-12">
       <div className="w-full mx-auto">
       <div className="mt-6 flex pb-4 tablet:pb-8 border-[black] border-b-2 justify-between">
         <div className="">
-          <div className=" font-[700]  text-left w-fit text-[10px] mobile:text-[14px] tablet:text-[16px] leading-5">
+          <a href="https://www.figma.com/file/tPc7DcOMG7jqED3Fwxy96w/AI-Learning?node-id=2%3A3&t=P6B9gBagfN0XAZqy-0" className=" font-[700]  text-left w-fit text-[10px] mobile:text-[14px] tablet:text-[16px] leading-5">
             Figma <p>Design</p>
-          </div>
+          </a>
         </div>
         <div>
           <div className="relative bottom-2 flex gap-1.5 h-[50px]  text-[7.5px] tablet:text-[12px] font-semibold">
@@ -24,9 +24,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <div className="font-[700] text-[10px] mobile:text-[14px] tablet:text-[16px] text-right leading-5">
+          <a href="https://github.com/NOBELA-STAR/Nobela-star" className="font-[700] text-[10px] mobile:text-[14px] tablet:text-[16px] text-right leading-5">
             Github <p>Repository</p>
-          </div>
+          </a>
         </div>
       </div>
       <div className="flex justify-center mt-10 tablet:mt-166">

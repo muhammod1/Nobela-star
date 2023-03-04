@@ -9,6 +9,7 @@ module.exports = {
           grey: "#92929D",
           pink: "#FF8A62",
           blue: "#18A0FB",
+          light: "rgba(245, 211, 16, 0.1)",
           'linear-bg': "rgba(25,27,38,.4)"
         },
         screens: {
