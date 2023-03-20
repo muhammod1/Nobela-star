@@ -8,10 +8,10 @@ const Benefit = () => {
     <div className="bg-light">
       <div className="bg-black">
         <NavBar />{" "}
-        <div className="h-[500px] overflow-hidden">
-          <img className="" src={AiCon} alt="" />
-        </div>
       </div>
+        <div className="h-fit w-full bg-black overflow-hidden">
+          <img className="h-fit" src={AiCon} alt="" />
+        </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
         <p className="mt-7  font-bold text-[20px] text-black">Benefit of AI</p>
         <br />

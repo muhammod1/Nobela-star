@@ -60,11 +60,11 @@ const AiCont = () => {
       className="relative w-[97%] bg-light h-fit mx-auto max-w-[1430px]"
     >
       <img
-        className="hidden tablet_l:block absolute bottom-0 right-0 h-full"
+        className="hidden z-0 tablet_l:block absolute bottom-0 right-0 h-full"
         src={AiCon}
         alt="ai"
       />
-      <div className="py-5">
+      <div className="relative py-5 z-10">
         <p className="font-[700] text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
           Learning about AI [Artificial Intelligence] is made easy
         </p>
@@ -84,12 +84,12 @@ const AiCont = () => {
                 <p className="tablet:hidden text-[14px] font-[500] mt-2 ">
                   {item.desc2}
                 </p>
-                <Link
-                  to={item.link}
-                  className="py-2 px-6 w-fit hidden tablet:block border-2 border-blue rounded-md"
-                >
-                  Go
-                </Link>
+                  <Link
+                    to={item.link} 
+                    className="py-2 px-6 w-fit hidden tablet:block border-2 border-blue rounded-md"
+                  >
+                    Go
+                  </Link>
               </div>
               <Link
                 to={item.link}
