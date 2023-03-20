@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import AiCon from "../assets/intro.svg"
+import Footer from "../components/Footer";
 
 
 const Introduction = () => {
@@ -328,9 +329,9 @@ const Introduction = () => {
           <br />
           <br />
           <br />
-          <br />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
