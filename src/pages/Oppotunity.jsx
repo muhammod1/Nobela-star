@@ -9,7 +9,7 @@ const Oppotunity = () => {
       <div className="bg-black">
         <NavBar />{" "}
         <div className="h-fit bg-black w-full overflow-hidden">
-          <img className="h-fit " src={AiCon} alt="" />
+          <img className="h-fit mx-auto" src={AiCon} alt="" />
         </div>
       </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">

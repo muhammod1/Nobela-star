@@ -57,7 +57,7 @@ const AiCont = () => {
   return (
     <div
       id="content"
-      className="relative w-[97%] bg-light h-fit mx-auto max-w-[1430px]"
+      className="relative w-[97%] h-fit mx-auto max-w-[1430px]"
     >
       <img
         className="hidden z-0 tablet_l:block absolute bottom-0 right-0 h-full"

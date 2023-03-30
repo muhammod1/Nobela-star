@@ -10,7 +10,7 @@ const Future = () => {
         <NavBar />
       </div>
         <div className="h-fit w-full overflow-hidden">
-          <img className="h-fit" src={AiCon} alt="" />
+          <img className="h-fit mx-auto" src={AiCon} alt="" />
         </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
         <p className="mt-7  font-bold text-[20px] text-black">Future of AI</p>

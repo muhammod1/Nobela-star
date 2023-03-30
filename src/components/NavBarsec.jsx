@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import MobileNav from "./MobileNav";
 
@@ -11,9 +11,9 @@ const NavBarsec = ({ link }) => {
   return (
     <nav className="py-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
 
-      <div>
+      <Link to='/'>
         <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
-      </div>
+      </Link>
       <div className="hidden laptop:flex text-[14px] text-blue gap-5 items-center font-semibold">
         <NavLink to="/" className="py-3 px-5">
           Home

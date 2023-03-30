@@ -32,10 +32,10 @@ const FooterSec = () => {
       <div className="flex justify-center mt-10 tablet:mt-166">
         <div>
           <div className="mx-auto w-fit flex gap-2">
-            <img className="tablet:h-[30px] h-[20px] w-[20px]  tablet:w-[40px]" src={git} alt="" />
-            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={twitter} alt="" />
-            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={figma} alt="" />
-            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={slack} alt="" />
+            <img className="w-[10%] h-[15%]" src={git} alt="" />
+            <img className="w-[10%] h-[15%]" src={twitter} alt="" />
+            <img className="w-[10%] h-[15%]" src={figma} alt="" />
+            <img className="w-[10%] h-[15%]" src={slack} alt="" />
           </div>
           <p className="text-[10px] tablet:text-[10px] mt-4 font-semibold text-center">© Team, Fuad & Muhammod. 2023. We love Unilorin</p>
         </div>

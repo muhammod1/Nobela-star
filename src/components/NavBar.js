@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoIosArrowBack } from "react-icons/io"
 import { Link } from "react-router-dom";
@@ -12,12 +11,13 @@ const NavBar = ({ link, text }) => {
 
   return (
     <nav className="p-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
-      <Link to={link}>
+      <Link to='/'>
         <IoIosArrowBack className="text-[#fff] relative -left-[15px] h-[50px] w-[40px] " />
       </Link>
-      <div>
+      
+      <Link to='/'>
         <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
-      </div>
+      </Link>
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
           <BlueButton text={text} />

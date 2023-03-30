@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import About from "../../components/About";
 import AIApp from "../../components/AIApp";
 import AiCont from "../../components/AiCont";
@@ -19,12 +18,12 @@ const Home = () => {
             <p className="text-[#18A0FB] w-fit font-[700] text-[36px] tablet:text-[56px] text-center ">
               WELCOME TO AI LEARNING
             </p>
-            <Link
-              to="/image"
+            <a
+              href="#ai_app"
               className="text-white py-2 px-5 mt-4 rounded-md bg-[#18A0FB] mx-auto"
             >
               use our AI
-            </Link>
+            </a>
           </div>
         </div>
         <AiCont />
@@ -32,7 +31,7 @@ const Home = () => {
         <About />
         <Road />
         <Footer />
-        <div className="h-1 bg-light" />
+        <div className="h-1" />
       </header>
     </div>
   );

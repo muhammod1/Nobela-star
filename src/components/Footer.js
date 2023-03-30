@@ -7,7 +7,7 @@ import slack from "../assets/slack.svg";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1400px] bg-light w-full px-4 mx-auto pt-[7rem] pb-12">
+    <div className="max-w-[1400px] w-full px-4 mx-auto pt-[7rem] pb-12">
       <div className="w-full mx-auto">
       <div className="mt-6 flex pb-4 tablet:pb-8 border-[black] border-b-2 justify-between">
         <div className="">
@@ -32,10 +32,10 @@ const Footer = () => {
       <div className="flex justify-center mt-10 tablet:mt-166">
         <div>
           <div className="mx-auto w-fit flex gap-2">
-            <img className="tablet:h-[30px] h-[20px] w-[20px]  tablet:w-[40px]" src={git} alt="" />
-            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={twitter} alt="" />
-            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={figma} alt="" />
-            <img className="tablet:h-[30px] h-[20px] w-[20px] tablet:w-[40px]" src={slack} alt="" />
+            <img className="w-[10%] h-[15%]" src={git} alt="" />
+            <img className="w-[10%] h-[15%]"  src={twitter} alt="" />
+            <img className="w-[10%] h-[15%]"  src={figma} alt="" />
+            <img className="w-[10%] h-[15%]"  src={slack} alt="" />
           </div>
           <p className="text-[10px] tablet:text-[10px] mt-4 font-semibold text-center">© Team, Fuad & Muhammod. 2023. We love Unilorin</p>
         </div>
