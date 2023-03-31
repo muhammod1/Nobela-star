@@ -19,7 +19,7 @@ const NavBarsec = ({ link }) => {
           Home
         </NavLink>
         <a href="#content" className="py-3 px-5">
-          Contact
+          Content
         </a>
           <a 
             href="#about"
@@ -28,12 +28,16 @@ const NavBarsec = ({ link }) => {
             About
           </a>
       </div>
-      <div className="bg-blue">
-
-      </div>
+   
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
           {/* <BlueButton text="Test AI" /> */}
+          <a
+              href="#ai_app"
+              className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"
+            >
+              use our AI
+            </a>
         </div>
       </div>
       <div

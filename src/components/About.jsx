@@ -12,7 +12,7 @@ const About = () => {
       </p>
       <div className="flex flex-wrap w-[97%] laptop_l:w-[900px] justify-between my-20 mx-auto">
         <div className="flex w-[48%] mx-auto flex-col">
-          <img className="mx-auto laptop:mr-20 tablet_l:w-[280px] laptop:mr-[10rem] laptop:w-[300px] laptop:h-[300px] h-[150px] tablet_l:h-[280px]" src={fuad} alt="pic" />
+          <img className="mx-auto tablet_l:w-[280px] laptop:mr-[10rem] laptop:w-[300px] laptop:h-[300px] h-[150px] tablet_l:h-[280px]" src={fuad} alt="pic" />
           <p className="text-[10px] mobile:text-[14px] tablet:text-[16px] text-center laptop:text-left font-[700] laptop:mt-3">ADESHINA Fuad Oluwaniyi</p>
           <p className="text-[14px] font-[500] mt-3 hidden laptop:block w-full laptop_l:w-[350px]">
             Faculty of Education, department of Educational Technology, program
