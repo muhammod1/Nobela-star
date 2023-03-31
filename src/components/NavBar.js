@@ -19,9 +19,9 @@ const NavBar = ({ link, text }) => {
         <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
       </Link>
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
-        <div className="flex gap-6  my-auto">
+        <Link to={link} className="flex gap-6  my-auto">
           <BlueButton text={text} />
-        </div>
+        </Link>
       </div>
       <div
         onClick={() => setIsActive(!isActive)}
