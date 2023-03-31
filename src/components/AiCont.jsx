@@ -75,18 +75,18 @@ const AiCont = () => {
               className="flex tablet:block w-[95%] tablet_l:w-[45%] pb-3 tablet:pb-5 border-[3px] tablet:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
             >
               <div className="">
-                <p className="font-[600] text-[16px] tablet:text-[20px]">
+                <p className="font-[600] text-[20px] tablet:text-[20px]">
                   {item.title}
                 </p>
-                <p className="text-[14px] hidden tablet:block font-[500] mt-2 mb-5">
+                <p className="text-[18px] hidden tablet:block font-[500] leading-8 mt-2 mb-5">
                   {item.desc}
                 </p>
-                <p className="tablet:hidden text-[14px] font-[500] mt-2 ">
+                <p className="tablet:hidden text-[16px] font-[500] mt-2 ">
                   {item.desc2}
                 </p>
                   <Link
                     to={item.link} 
-                    className="py-1.5 px-8 w-fit hidden tablet:block border-[3px] border-blue rounded-md"
+                    className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tablet:block border-[3px] border-blue rounded-md"
                   >
                     Go
                   </Link>
