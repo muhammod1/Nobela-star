@@ -86,7 +86,7 @@ const AiCont = () => {
                 </p>
                   <Link
                     to={item.link} 
-                    className="py-2 px-6 w-fit hidden tablet:block border-2 border-blue rounded-md"
+                    className="py-1.5 px-8 w-fit hidden tablet:block border-[3px] border-blue rounded-md"
                   >
                     Go
                   </Link>
