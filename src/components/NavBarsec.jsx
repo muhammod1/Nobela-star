@@ -31,7 +31,6 @@ const NavBarsec = ({ link }) => {
    
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
-          {/* <BlueButton text="Test AI" /> */}
           <a
               href="#ai_app"
               className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"

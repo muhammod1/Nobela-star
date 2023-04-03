@@ -1,13 +1,13 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import AiCon from "../assets/Chal.svg";
 import Footer from "../components/Footer";
+import NavBarTh from "../components/NavBarTh";
 
 const Challenges = () => {
   return (
     <div>
       <div className="bg-black">
-        <NavBar />
+        <NavBarTh />
       </div>
         <div className="h-fit bg-black w-full overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />

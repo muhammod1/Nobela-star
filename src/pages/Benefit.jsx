@@ -1,13 +1,13 @@
 import React from "react";
 import AiCon from "../assets/Ben.svg";
 import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import NavBarTh from "../components/NavBarTh";
 
 const Benefit = () => {
   return (
     <div className="bg-light">
       <div className="bg-black">
-        <NavBar />{" "}
+        <NavBarTh />
       </div>
         <div className="h-fit w-full bg-black overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />
