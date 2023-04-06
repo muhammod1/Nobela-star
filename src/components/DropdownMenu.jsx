@@ -1,46 +1,81 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Down from '../assets/Down.svg'
+import GreaterThan from "../assets/greaterThan.svg";
+import Down from "../assets/Down.svg";
 
 function DropdownMenu({ links }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedLink, setSelectedLink] = useState(null);
+  const [isOpen, setIsOpen] = useState(true);
+  const [selectedItem, setSelectedItem] = useState("");
 
-  const handleLinkClick = (link) => {
-    setSelectedLink(link);
-  };
+  const items = [
+    {
+      item: "Introduction",
+      link: "/introduction",
+    },
+    {
+      item: "Application",
+      link: "/application",
+    },
+    {
+      item: "Benefit",
+      link: "/benefit",
+    },
+    {
+      item: "Challenges",
+      link: "/challenges",
+    },
+    {
+      item: "Future",
+      link: "/future",
+    },
+    {
+      item: "Opportunities",
+      link: "/oppotunities",
+    },
+  ];
 
-  const handleLinkMove = (link) => {
-    const newLinks = [...links];
-    const linkIndex = newLinks.indexOf(link);
-    newLinks.splice(linkIndex, 1);
-    newLinks.unshift(link);
-    setSelectedLink(link);
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    setIsOpen(false);
   };
 
   return (
-    <div className="dropdown">
-      <button className="dropdown-toggle relative" onClick={() => setIsOpen(true)}>
-        Links
-        <img src={Down} alt='' />
-      </button>
-      <div className={`dropdown-menu p-3 gap-3 bg-white flex flex-col absolute ${isOpen ? "show" : ""}`}>
-       
-        {links.map((link) => (
-          <Link
-            key={link}
-            className={`dropdown-item ${selectedLink === link ? "bg-[#18A0FB]" : ""}`}
-            to={`/${link}`}
-            onClick={() => {
-              handleLinkClick(link);
-              handleLinkMove(link);
-              setIsOpen(false);
-            }}
-          >
-            {link}
-          </Link>
-        ))}
+    <div className="dropdown flex gap-4">
+      <div 
+          onClick={() => setIsOpen(!isOpen)}
+          className=" flex gap-2  hover:bg-bluep py-3 px-5">
+        Content
+        <img src={GreaterThan} alt="" />
       </div>
+      <div className=" relative">
+        <button
+          className="dropdown-toggle relative"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {/* <img className="relative left-[6.8rem] z-40" src={Down} alt="" /> */}
+        </button>
+        <ul
+          className={`absolute -left-3 bg-white w-[150px] pt-0 ${
+            isOpen ? "-top-1 h-[10px] hidden" : "top-6 -mt-4"
+          }`}
+        >
+          {items.map((item, index) => (
+            <li className="w-[150px] my-1" key={index}>
+              <Link
+                to={item.link}
+                className="cursor-pointer px-3 py-1 hover:bg-bluep w-full bg-white"
+                onClick={() => {
+                  handleItemClick(item.item)
+                  setIsOpen(!isOpen)
+                }}
+              >
+                {item.item}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* <div>{selectedItem}</div> */}
     </div>
   );
 }

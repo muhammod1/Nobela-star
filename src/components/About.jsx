@@ -9,9 +9,9 @@ const About = () => {
       <p className="font-[600] tracking-wider text-[16px] tablet:text-[18px] laptop_l:text-[20px] text-justify w-[95%] laptop_l:w-[850px] mx-auto">
       This project is based on the EDT 121 (Introduction to design) assignment given by Mr. MUHAMMAD K.J, University of Ilorin, Kwara State, Nigeria.
       </p>
-      <div className="flex bg-pink flex-wrap laptop_l:w-[97%] max-w-[1400px] justify-between my-20 mx-auto">
+      <div className="flex flex-wrap laptop_l:w-[97%] max-w-fit justify-between my-20 mx-auto">
         <div className="flex w-[48%] mx-auto flex-col">
-          <img className="mx-auto tablet_l:w-[280px] laptop:mr-[10rem] laptop:w-[300px] laptop:h-[300px] h-[150px] tablet_l:h-[280px]" src={fuad} alt="pic" />
+          <img className=" tablet_l:w-[280px] laptop:w-[300px] laptop:h-[300px] h-[150px] tablet_l:h-[280px]" src={fuad} alt="pic" />
           <p className="text-[10px] mobile:text-[14px] tablet:text-[16px] text-center laptop:text-left font-[700] laptop:mt-3">ADESHINA Fuad Oluwaniyi</p>
           <p className="text-[14px] font-[500] mt-3 hidden laptop:block w-full laptop_l:w-[350px]">
             Faculty of Education, department of Educational Technology, program
@@ -19,7 +19,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex laptop:pl-12 w-[48%] flex-col laptop:flex-col-reverse ml-auto">
-          <img className="mx-auto tablet_l:w-[280px] laptop:mr-[10rem] laptop:w-[300px] laptop:h-[300px] h-[150px] tablet_l:h-[280px]" src={muhammod} alt="VtT" />
+          <img className=" tablet_l:w-[280px] laptop:mr-[10rem] laptop:w-[300px] laptop:h-[300px] h-[150px] tablet_l:h-[280px]" src={muhammod} alt="VtT" />
           <p className="text-[14px] font-[500]  hidden laptop:block mt-3 w-full laptop_l:w-[350px]">
             Faculty of Education, department of Educational Technology, program
             of Computer Science and Education.

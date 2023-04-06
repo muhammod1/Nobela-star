@@ -21,10 +21,7 @@ const NavBarTh = ({ link }) => {
           <NavLink to="/" className="py-3 px-5">
             Home
           </NavLink>
-          <div className=" flex gap-2 py-3 px-5">
-            Content
-            <img src={GreaterThan} alt="" />
-          </div>
+         
           <DropdownMenu links={["introduction", "application", "benefit", 'challenges', 'future', 'oppotunities']} />
 
 

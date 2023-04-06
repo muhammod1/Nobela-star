@@ -1,5 +1,5 @@
 import React from "react";
-import AiCon from "../assets/intro.svg";
+import AiCon from "../assets/App.svg";
 import Footer from "../components/Footer";
 import NavBarTh from "../components/NavBarTh";
 
