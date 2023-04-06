@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import NavBarTh from "../components/NavBarTh";
 
 const Application = () => {
+  
   return (
     <div className="bg-light">
       <div className="bg-black">
