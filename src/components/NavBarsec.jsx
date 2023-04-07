@@ -46,9 +46,15 @@ const NavBarsec = ({ link }) => {
         <AiOutlineMenu className="w-[30px] h-[30px]" />
       </div>
       {isActive && (
-        <div className="absolute right-0 bg-grey top-0 h-[100vh] w-[70%] transition ease-in-out delay-350">
+        <>
+        <div
+        onClick={() => setIsActive(!isActive)}
+        className="fixed right-0 z-50 bg-transparent shadow-2xl top-0 h-[100vh] w-[100%] transition ease-in-out delay-350"
+        />
+        <div className="fixed right-0 z-50 bg-blue shadow-2xl top-0 h-[100vh] w-[70%] transition ease-in-out delay-350">
           <MobileNav setIsActive={setIsActive} />
         </div>
+        </>
       )}
     </nav>
   );

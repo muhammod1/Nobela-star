@@ -14,7 +14,7 @@ const Home = () => {
         <NavBarsec />
       </div>
      
-      <header className="relative z-50 h-[400px] tablet:h-[90vh] max-h-[600px] ">
+      <header className="relative z-40 h-[400px] tablet:h-[90vh] max-h-[600px] ">
         <div className="bg- h-full w-full  justify-center items-center">
         <div className="relative h-full bg-black w-full overflow-hidden">
           <video
@@ -54,7 +54,7 @@ const Home = () => {
             </video>
           </div>
           </div>
-          <div className="absolute w-full mx-auto top-[45%] ">
+          <div className="absolute w-full mx-auto top-[25%] tablet:top-[45%] ">
             <div className="w-fit mx-auto flex justify-center flex-col">
               <p className="text-[#18A0FB] w-fit tracking-wider
               st font-[700] text-[30px] tablet:text-[40px] text-center ">
@@ -62,7 +62,7 @@ const Home = () => {
               </p>
               <a
                 href="#ai_app"
-                className="text-white py-1.5 px-8 mt-32 rounded-md bg-[#18A0FB] mx-auto"
+                className="text-white py-1.5 px-8 mt-20 tablet:mt-28 rounded-md bg-[#18A0FB] mx-auto"
               >
                 use our AI
               </a>

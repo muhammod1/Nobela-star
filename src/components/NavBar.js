@@ -23,17 +23,6 @@ const NavBar = ({ link, text }) => {
           <BlueButton text={text} />
         </Link>
       </div>
-      <div
-        onClick={() => setIsActive(!isActive)}
-        className="my-auto block laptop:hidden "
-      >
-        <AiOutlineMenu className="w-[30px] h-[30px]" />
-      </div>
-      {isActive && (
-        <div className="absolute right-0 bg-grey top-0 h-[100vh] w-[70%] transition ease-in-out delay-350">
-          <MobileNav setIsActive={setIsActive} />
-        </div>
-      )}
     </nav>
   );
 };
