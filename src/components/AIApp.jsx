@@ -18,7 +18,7 @@ const AIApp = () => {
           <div className="flex justify-between laptop:gap-16 laptop_l:gap-8 mt-4 tablet:mt-6 w-full">
             <Link to="/image" className="flex flex-col">
               <img
-                className="w-[80%] mx-auto laptop:w-[350px]  h-[300px]"
+                className="hover:scale-105 w-[80%] mx-auto laptop:w-[350px]  h-[300px]"
                 src={picR}
                 alt="pic"
               />
@@ -31,7 +31,7 @@ const AIApp = () => {
               className="flex flex-col tablet:flex-col-reverse "
             >
               <img
-                className="w-[80%] mx-auto laptop:w-[350px]  h-[300px]"
+                className="hover:scale-105 w-[80%] mx-auto laptop:w-[350px]  h-[300px]"
                 src={VtT}
                 alt="VtT"
               />
@@ -59,7 +59,7 @@ const AIApp = () => {
               className="flex ml-auto flex-col"
             >
               <img
-                className="w-[450px] h-[450px]"
+                className=" hover:scale-105 w-[450px] h-[450px]"
                 src={chatgbt}
                 alt="chatgbt"
               />
