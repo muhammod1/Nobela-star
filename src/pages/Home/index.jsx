@@ -58,7 +58,7 @@ const Home = () => {
             <div className="w-fit mx-auto flex justify-center flex-col">
               <p className="text-[#18A0FB] w-fit tracking-wider
               st font-[700] text-[30px] tablet:text-[40px] text-center ">
-                WELCOME TO AI LEARNING
+                WELCOME TO LEARNING AI
               </p>
               <a
                 href="#ai_app"
