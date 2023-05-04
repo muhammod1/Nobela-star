@@ -72,28 +72,28 @@ const AiCont = () => {
           {note.map((item) => (
             <div
               key={item.id}
-              className="flex tablet:block w-[95%] tablet_l:w-[45%] pb-3 tablet:pb-5 border-[3px] tablet:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
+              className="flex tab:block w-[95%] tablet_l:w-[45%] pb-3 tab:pb-5 border-[3px] tab:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
             >
               <div className="">
-                <p className="font-[600] text-[20px] tablet:text-[20px]">
+                <p className="font-[600] text-[20px] tab:text-[20px]">
                   {item.title}
                 </p>
-                <p className="text-[18px] hidden tablet:block font-[500] leading-8 mt-2 mb-5">
+                <p className="text-[18px] hidden tab:block font-[500] leading-8 mt-2 mb-5">
                   {item.desc}
                 </p>
-                <p className="tablet:hidden text-[16px] font-[500] mt-2 ">
+                <p className="tab:hidden text-[16px] font-[500] mt-2 ">
                   {item.desc2}
                 </p>
                   <Link
                     to={item.link} 
-                    className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tablet:block border-[3px] border-blue rounded-md"
+                    className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tab:block border-[3px] border-blue rounded-md"
                   >
                     Go
                   </Link>
               </div>
               <Link
                 to={item.link}
-                className="w-[25%] flex tablet:hidden items-center"
+                className="w-[25%] flex tab:hidden items-center"
               >
                 <img
                   className="w-[44px] h-[44px] m-auto"
