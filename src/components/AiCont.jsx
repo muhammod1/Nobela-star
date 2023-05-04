@@ -85,14 +85,14 @@ const AiCont = () => {
                   {item.desc2}
                 </p>
                   <Link
-                    to={item.link} 
+                    to='/content' 
                     className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tab:block border-[3px] border-blue rounded-md"
                   >
                     Go
                   </Link>
               </div>
               <Link
-                to={item.link}
+                to='/content'
                 className="w-[25%] flex tab:hidden items-center"
               >
                 <img

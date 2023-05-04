@@ -7,7 +7,7 @@ const Challenges = () => {
   return (
     <div>
       <div className="bg-black">
-        <NavBarTh />
+        {/* <NavBarTh /> */}
       </div>
         <div className="h-fit bg-black w-full overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />

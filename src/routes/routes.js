@@ -9,6 +9,7 @@ import Challenges from "../pages/Challenges";
 import Future from "../pages/Future";
 import Oppotunity from "../pages/Oppotunity";
 import Introduction from "../pages/Introduction";
+import Content from "../pages/Content";
 
 const CreateRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const CreateRoutes = () => {
           <Route path="/future" element={<Future />}></Route>
           <Route path="/oppotunities" element={<Oppotunity />}></Route>
           <Route path="/introduction" element={<Introduction />}></Route>
+          <Route path="/content" element={<Content />}></Route>
         </Routes>
       </div>
     </div>

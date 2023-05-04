@@ -1,15 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import AiCon from "../assets/Fut.svg";
 import Footer from "../components/Footer";
 import NavBarTh from "../components/NavBarTh";
+import Future from "./Future";
+import Introduction from "./Introduction";
+import Application from "./Application";
+import Benefit from "./Benefit";
+import Challenges from "./Challenges";
+import Oppotunity from "./Oppotunity";
 
-const Future = () => {
+const Content = () => {
+  const [activeTab, setActiveTab] = useState(1);
+  const [isOpenTab, setIsOpenTab] = useState(false);
+  const [isCont, setisCont] = useState(false)
+
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+    setisCont(!isCont)
+  };
+
   return (
     <div>
-      <div className="bg-black">
-        {/* <NavBarTh /> */}
+      <div className="bg-black fixed w-full">
+        <NavBarTh  isCont={isCont} setisCont={setisCont} handleTabClick={handleTabClick} activeTab={activeTab} />
       </div>
-        <div className="h-fit w-full overflow-hidden">
+        
+      <div>
+        <br />
+        <br />
+        {activeTab === 1 && <Introduction />}
+        {activeTab === 2 && <Application />}
+        {activeTab === 3 && <Benefit />}
+        {activeTab === 4 && <Challenges />}
+        {activeTab === 5 && <Future />}
+        {activeTab === 6 && <Oppotunity />}
+      </div>
+      {/* <Future /> */}
+      {/* <div className="h-fit w-full overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />
         </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
@@ -65,9 +93,9 @@ const Future = () => {
         there may be a need for greater governance and regulation of AI to
         ensure that it is being used safely and responsibly._
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
 
-export default Future;
+export default Content;

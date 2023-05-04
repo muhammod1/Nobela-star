@@ -8,7 +8,7 @@ const Application = () => {
   return (
     <div className="bg-light">
       <div className="bg-black">
-        <NavBarTh />
+        {/* <NavBarTh /> */}
       </div>
       <div className="h-fit w-full bg-black overflow-hidden">
         <img className="h-fit mx-auto" src={AiCon} alt="" />
