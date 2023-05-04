@@ -7,6 +7,11 @@ function DropdownMenu({ links }) {
   const [isOpen, setIsOpen] = useState(true);
   const [selectedItem, setSelectedItem] = useState("");
 
+  localStorage.setItem('cont', selectedItem)
+  const conts = localStorage.getItem("cont");
+  console.log(conts)
+  console.log(selectedItem)
+
   const items = [
     {
       item: "Introduction",
@@ -44,6 +49,7 @@ function DropdownMenu({ links }) {
 
   return (
     <div className="dropdown flex gap-4">
+      <div>{selectedItem}</div>
       <div 
           onClick={() => setIsOpen(!isOpen)}
           className=" flex gap-2  hover:bg-bluep py-3 px-5">
