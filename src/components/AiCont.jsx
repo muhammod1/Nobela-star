@@ -68,7 +68,7 @@ const AiCont = () => {
         <p className=" px-3 font-[700]  text-[20px] tab:text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
           Learning about AI [Artificial Intelligence] is made easy
         </p>
-          <div className="border-[1px] w-[95%] mx-auto mb-2 border-bluep" />
+          <div className="border-[.5px] w-[95%] mx-auto mb-2 border-blue" />
         <div className=" flex-wrap gap-2 tab:gap-5 justify-center tablet_l:justify-between hidden tablet_l:flex">
           {note.map((item) => (
             <div
