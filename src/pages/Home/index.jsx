@@ -40,7 +40,7 @@ const Home = () => {
               autoPlay
               muted
               loop
-              className="tablet:hidden min-w-full min-h-full w-auto h-full"
+              className="tablet:hidden min-w-fit min-h-[350px] w-auto h-[350px]"
               id="myVideo"
             >
               <source
