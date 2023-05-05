@@ -48,7 +48,7 @@ const AIApp = () => {
               <p className="text-[20px] ml-5 text-center mobile:text-[22px] laptop_l:text-[24px] font-[600]">
                 Chatgbt
               </p>
-              <p className="laptop_l:hidden text-center text-[16px] font-[500] mt-2">
+              <p className="laptop_l:hidden text-center text-[14px] font-[500] mt-1">
                 Popular AI software
               </p>
             </div>
@@ -63,7 +63,7 @@ const AIApp = () => {
                 src={chatgbt}
                 alt="chatgbt"
               />
-              <p className="hidden laptop_l:block text-center text-[22px] font-[600] mt-3">
+              <p className="hidden laptop_l:block text-center  text-[22px] font-[600] mt-3">
                 Popular AI software
               </p>
             </a>
