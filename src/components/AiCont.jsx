@@ -106,7 +106,8 @@ const AiCont = () => {
         </div>
         <div className="flex tablet_l:hidden flex-wrap gap-5 justify-center tablet_l:justify-between">
           {note.map((item) => (
-            <div
+            <Link
+            to={item.link}
               key={item.id}
               className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[3px] tablet_l:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
             >
@@ -137,7 +138,7 @@ const AiCont = () => {
                   alt=".."
                 />
               </Link>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
