@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="max-w-[1400px] w-full px-4 mx-auto pt-2 tab:pt-[5rem] pb-4 tab:pb-12">
       <div className="w-full mx-auto">
-      <div className="mt-6 flex pb-2 tab:pb-4 tablet:pb-8 border-[black] border-b-2 justify-between">
+      <div className="mt-6 flex pb-1 tab:pb-4 tablet:pb-8 border-[black] border-b-[1px] tab:border-b-2 justify-between">
         <div className="">
           <a href="https://www.figma.com/file/tPc7DcOMG7jqED3Fwxy96w/AI-Learning?node-id=2%3A3&t=P6B9gBagfN0XAZqy-0" className=" font-[700]  text-left w-fit text-[10px] mobile:text-[12px] tablet:text-[16px] leading-5">
             Figma <p>Design</p>

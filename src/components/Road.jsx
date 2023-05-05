@@ -6,10 +6,10 @@ const Road = () => {
   return (
     <div className="bg-blue text-white py-5 tab:py-10">
       <div className="flex flex-col w-[97%] h-fit mx-auto max-w-[1430px]">
-        <p className="text-[18px] mobile:text-[24px] tablet:text-[30px] mb-3 tab:mb-8 font-[600] ">
+        <p className="text-[16px] mobile:text-[22px] tablet:text-[26px] mb-3 tab:mb-8 font-[600] ">
           Roadmap
         </p>
-        <img className="w-full mx-auto " src={RoadMap} alt="road map" />
+        <img className="w-full mx-auto px-2" src={RoadMap} alt="road map" />
       </div>
       <div className="flex flex-wrap w-[97%] gap-4 tab:gap-10 justify-between  h-fit mx-auto max-w-[1430px] mb-4 tab:mb-16 mt-5 tab:mt-20">
         <div className="mx-auto bg-blue">
