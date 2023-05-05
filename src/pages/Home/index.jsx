@@ -14,7 +14,7 @@ const Home = () => {
         <NavBarsec />
       </div>
      
-      <header className="relative z-40 h-[400px] tablet:h-[90vh] max-h-[600px] ">
+      <header className="relative z-40 h-full tablet:h-[45vh] max-h-[600px] ">
         <div className="bg- h-full w-full  justify-center items-center">
         <div className="relative h-full bg-black w-full overflow-hidden">
           <video
@@ -60,12 +60,7 @@ const Home = () => {
               st font-[700] text-[30px] tablet:text-[40px] text-center ">
                 WELCOME TO LEARNING AI
               </p>
-              <a
-                href="#ai_app"
-                className="text-white py-1.5 px-8 mt-20 tablet:mt-28 rounded-md bg-[#18A0FB] mx-auto"
-              >
-                use our AI
-              </a>
+             
             </div>
           </div>
         </div>

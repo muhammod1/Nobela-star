@@ -68,32 +68,68 @@ const AiCont = () => {
         <p className="font-[700] text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
           Learning about AI [Artificial Intelligence] is made easy
         </p>
-        <div className="flex flex-wrap gap-5 justify-center tablet_l:justify-between">
+        <div className=" flex-wrap gap-5 justify-center tablet_l:justify-between hidden tablet_l:flex">
           {note.map((item) => (
             <div
               key={item.id}
-              className="flex tab:block w-[95%] tablet_l:w-[45%] pb-3 tab:pb-5 border-[3px] tab:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
+              className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[3px] tablet_l:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
             >
               <div className="">
                 <p className="font-[600] text-[20px] tab:text-[20px]">
                   {item.title}
                 </p>
-                <p className="text-[18px] hidden tab:block font-[500] leading-8 mt-2 mb-5">
+                <p className="text-[18px] hidden tablet_l:block font-[500] leading-8 mt-2 mb-5">
                   {item.desc}
                 </p>
-                <p className="tab:hidden text-[16px] font-[500] mt-2 ">
+                <p className="tablet_l:hidden text-[16px] font-[500] mt-2 ">
                   {item.desc2}
                 </p>
                   <Link
                     to='/content' 
-                    className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tab:block border-[3px] border-blue rounded-md"
+                    className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tablet_l:block border-[3px] border-blue rounded-md"
                   >
                     Go
                   </Link>
               </div>
               <Link
                 to='/content'
-                className="w-[25%] flex tab:hidden items-center"
+                className="w-[25%] flex tablet_l:hidden items-center"
+              >
+                <img
+                  className="w-[44px] h-[44px] m-auto"
+                  src={rightArrow}
+                  alt=".."
+                />
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="flex tablet_l:hidden flex-wrap gap-5 justify-center tablet_l:justify-between">
+          {note.map((item) => (
+            <div
+              key={item.id}
+              className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[3px] tablet_l:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
+            >
+              <div className="">
+                <p className="font-[600] text-[20px] tab:text-[20px]">
+                  {item.title}
+                </p>
+                <p className="text-[18px] hidden tablet_l:block font-[500] leading-8 mt-2 mb-5">
+                  {item.desc}
+                </p>
+                <p className="tablet_l:hidden text-[16px] font-[500] mt-2 ">
+                  {item.desc2}
+                </p>
+                  <Link
+                    to='/content' 
+                    className="py-1.5 px-8 mt-[-16px] w-fit text-blue font-semibold hidden tablet_l:block border-[3px] border-blue rounded-md"
+                  >
+                    Go
+                  </Link>
+              </div>
+              <Link
+                to={item.link}
+                className="w-[25%] flex tablet_l:hidden items-center"
               >
                 <img
                   className="w-[44px] h-[44px] m-auto"

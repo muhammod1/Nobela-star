@@ -2,12 +2,14 @@ import React from "react";
 import AiCon from "../assets/Opp.svg";
 import Footer from "../components/Footer";
 import NavBarTh from "../components/NavBarTh";
+import ContNav from "../components/ContNav";
 
 const Oppotunity = () => {
   return (
     <div>
       <div className="bg-black">
         {/* <NavBarTh /> */}
+        <ContNav />
         <div className="h-fit bg-black w-full overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />
         </div>

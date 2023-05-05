@@ -21,7 +21,7 @@ const Content = () => {
   };
 
   return (
-    <div>
+    <div className="tablet_l:block hidden">
       <div className="bg-black fixed w-full">
         <NavBarTh  isCont={isCont} setisCont={setisCont} handleTabClick={handleTabClick} activeTab={activeTab} />
       </div>

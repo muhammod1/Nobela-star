@@ -1,21 +1,29 @@
 import React from "react";
 import AiCon from "../assets/intro.svg"
+import lessthan from "../assets/lessthan.svg"
 import Footer from "../components/Footer";
 import NavBarTh from "../components/NavBarTh";
+import ContNav from "../components/ContNav";
+import { Link } from "react-router-dom";
 
 
 const Introduction = () => {
   return (
     <div>
       <div className="bg-black">
-        {/* <NavBarTh /> */}
+        <ContNav />
       </div>
         <div className="h-fit w-full bg-black  overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />
         </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
-        <p className="my-7 font-bold text-[20px] text-black">
+        <p className="my-7 font-bold text-[20px] text-black flex justify-between">
           Introduction to AI
+          <Link to='/application' className="text-[14px] hover:bg-bluep px-3 text-grey font-[500] flex gap-2 items-center" >
+            Application of AI 
+          <img className="h-fit mx-auto" src={lessthan} alt="" />
+          
+          </Link>
         </p>
         <div>
           <span className="font-bold">Artificial intelligence (AI) </span> is a

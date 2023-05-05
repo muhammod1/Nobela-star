@@ -1,7 +1,9 @@
 import React from "react";
 import AiCon from "../assets/App.svg";
 import Footer from "../components/Footer";
-import NavBarTh from "../components/NavBarTh";
+import lessthan from "../assets/lessthan.svg"
+import ContNav from "../components/ContNav";
+import { Link } from "react-router-dom";
 
 const Application = () => {
   
@@ -9,13 +11,20 @@ const Application = () => {
     <div className="bg-light">
       <div className="bg-black">
         {/* <NavBarTh /> */}
+        <ContNav />
       </div>
       <div className="h-fit w-full bg-black overflow-hidden">
         <img className="h-fit mx-auto" src={AiCon} alt="" />
       </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
-        <p className="mt-7  font-bold text-[20px] text-black">
-          Aplication of AI
+        
+        <p className="my-7 font-bold text-[20px] text-black flex justify-between">
+        Aplication of AI
+          <Link to='/benefit' className="text-[14px] hover:bg-bluep px-3 text-grey font-[500] flex gap-2 items-center" >
+            Benefit of AI 
+          <img className="h-fit mx-auto" src={lessthan} alt="" />
+          
+          </Link>
         </p>
         <br />
         Some of the many applications of AI in various industries, such as

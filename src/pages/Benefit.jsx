@@ -1,19 +1,28 @@
 import React from "react";
 import AiCon from "../assets/Ben.svg";
 import Footer from "../components/Footer";
-import NavBarTh from "../components/NavBarTh";
+import lessthan from "../assets/lessthan.svg"
+import { Link } from "react-router-dom";
+import ContNav from "../components/ContNav";
 
 const Benefit = () => {
   return (
     <div className="bg-light">
       <div className="bg-black">
-        {/* <NavBarTh /> */}
+        <ContNav />
       </div>
         <div className="h-fit w-full bg-black overflow-hidden">
           <img className="h-fit mx-auto" src={AiCon} alt="" />
         </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
-        <p className="mt-7  font-bold text-[20px] text-black">Benefit of AI</p>
+      <p className="my-7 font-bold text-[20px] text-black flex justify-between">
+        Benefit of AI
+          <Link to='/challenges' className="text-[14px] hover:bg-bluep px-3 text-grey font-[500] flex gap-2 items-center" >
+            Challenges of AI 
+          <img className="h-fit mx-auto" src={lessthan} alt="" />
+          
+          </Link>
+        </p>
         <br />
         AI can analyze vast amounts of data quickly and accurately, providing
         insights and predictions that can help humans make better decisions.

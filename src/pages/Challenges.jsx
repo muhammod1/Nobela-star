@@ -1,19 +1,30 @@
 import React from "react";
 import AiCon from "../assets/Chal.svg";
 import Footer from "../components/Footer";
-import NavBarTh from "../components/NavBarTh";
+import lessthan from "../assets/lessthan.svg";
+import { Link } from "react-router-dom";
+import ContNav from "../components/ContNav";
 
 const Challenges = () => {
   return (
     <div>
       <div className="bg-black">
-        {/* <NavBarTh /> */}
+        <ContNav />
       </div>
-        <div className="h-fit bg-black w-full overflow-hidden">
-          <img className="h-fit mx-auto" src={AiCon} alt="" />
-        </div>
+      <div className="h-fit bg-black w-full overflow-hidden">
+        <img className="h-fit mx-auto" src={AiCon} alt="" />
+      </div>
       <div className=" w-[95%] max-w-[1420px] mx-auto">
-        <p className="mt-7  font-bold text-[20px] text-black">Challege of AI</p>
+        <p className="my-7 font-bold text-[20px] text-black flex justify-between">
+          Challenges of AI
+          <Link
+            to="/future"
+            className="text-[14px] hover:bg-bluep px-3 text-grey font-[500] flex gap-2 items-center"
+          >
+            Future of AI
+            <img className="h-fit mx-auto" src={lessthan} alt="" />
+          </Link>
+        </p>
         <br />
         There challenges and risks associated with AI, such as job displacement,
         bias, lack of empathy, security risks, and dependence on technology. You

@@ -42,7 +42,7 @@ const MobileNav2 = ({ setIsActive }) => {
               key={index}
                 to={item.link}
                 onClick={() => setIsActive(false)}
-          className="block my-4 mx-4 pb-3 font-bold text-[20px] text-black border-b-2 border-black"
+          className="block my-1 mx-4 pb-3 font-bold text-[16px] text-[#fff]"
               >
                 {item.item}
               </Link>
