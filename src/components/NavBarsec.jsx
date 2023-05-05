@@ -40,7 +40,7 @@ const NavBarsec = ({ link }) => {
       </div>
 
       <div className="my-auto h-fit bg-blue p-3 rounded-full laptop:hidden">
-        <BsSearch className="my-auto text-[#fff]" />
+        <BsSearch className="my-auto text-[#fff] w-[25px] h-[25px] " />
       </div>
 
       <div
