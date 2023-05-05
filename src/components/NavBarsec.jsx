@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import serach from "../assets/serach.svg";
@@ -38,8 +39,8 @@ const NavBarsec = ({ link }) => {
         </div>
       </div>
 
-      <div>
-        <img  src={serach} alt=''  />
+      <div className="my-auto h-fit bg-blue p-3 rounded-full laptop:hidden">
+        <BsSearch className="my-auto text-[#fff]" />
       </div>
 
       <div

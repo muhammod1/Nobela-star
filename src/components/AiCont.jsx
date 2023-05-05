@@ -110,7 +110,7 @@ const AiCont = () => {
             <Link
             to={item.link}
               key={item.id}
-              className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[1px] tab:border-[2px] tablet_l:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
+              className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[1px] tab:border-[2px] tablet_l:border-0 border-b-blue border-transparent border-l-0 border-t-0 border-r-0"
             >
               <div className="">
                 <p className="font-[600] text-[18px] tab:text-[20px]">
