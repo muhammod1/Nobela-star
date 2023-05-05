@@ -1,44 +1,42 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { ImCancelCircle } from "react-icons/im";
+import cancle from "../assets/cancle.svg";
 
-import { NavMenu } from "../Data/NavData";
 
 const MobileNav = ({ setIsActive }) => {
   return (
     <div>
-      <ImCancelCircle
-        onClick={() => setIsActive(false)}
-        className="w-[25px] h-[25px] text-[#fff]  ml-auto mr-10 mt-3"
-      />
+          <img src={cancle} 
+        className="font-[600] w-[25px] h-[25px] text-[#fff]  ml-auto mr-10 mt-3"
+        alt=''/>
+
       <div className="mt-3 flex flex-col">
       <a
           href="/"
           onClick={() => setIsActive(false)}
-          className="block my-1 mx-4 pb-3 font-bold text-[16px] text-[#fff]"
+          className="block my-5 mx-4 pb-3 font-bold text-[18px] text-[#fff]"
         >
           Home
         </a>
         <a
           href="/?#content"
           onClick={() => setIsActive(false)}
-          className="block my-1 mx-4 pb-3 font-bold text-[16px] text-[#fff]"
+          className="block my-5 mx-4 pb-3 font-bold text-[18px] text-[#fff]"
         >
           Content
         </a>
         <a
           href="/#about"
           onClick={() => setIsActive(false)}
-          className="block my-1 mx-4 pb-3 font-bold text-[16px] text-[#fff]"
+          className="block my-5 mx-4 pb-3 font-bold text-[18px] text-[#fff]"
         >
           About
         </a>
         <a
           href="/#ai_app"
           onClick={() => setIsActive(false)}
-          className="block my-1 mx-4 pb-3 font-bold text-[16px] text-[#fff]"
+          className="block my-5 mx-4 pb-3 font-bold text-[18px] text-[#fff]"
         >
-          use our AI
+          Contact us
         </a>
       </div>
     </div>

@@ -8,7 +8,7 @@ import ContNav from "../components/ContNav";
 const Benefit = () => {
   return (
     <div className="">
-      <div className="bg-black">
+      <div>
         <ContNav />
       </div>
         <div className="h-fit w-full bg-black overflow-hidden">

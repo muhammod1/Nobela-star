@@ -32,9 +32,9 @@ const ContNav = ({ link, text }) => {
           <>
             <div
               onClick={() => setIsActive(!isActive)}
-              className="fixed z-50 bg-bluep left-0  top-0 h-[100vh] cursor-pointer w-[100vw] transition ease-in-out delay-350"
+              className="fixed z-50 bg-[#334243] opacity-80  left-0  top-0 h-[100vh] cursor-pointer w-[100vw] transition ease-in-out delay-350"
             />
-            <div className="fixed right-0 z-50 bg-blue shadow-2xl top-0 h-fit w-[40%] transition ease-in-out delay-350">
+            <div className="fixed right-0 z-50 bg-nav shadow-2xl top-0 h-[380px] w-[170px] transition ease-in-out delay-350">
               <MobileNav setIsActive={setIsActive} />
             </div>
           </>

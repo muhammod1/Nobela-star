@@ -9,8 +9,7 @@ const Application = () => {
   
   return (
     <div className="">
-      <div className="bg-black">
-        {/* <NavBarTh /> */}
+      <div className="">
         <ContNav />
       </div>
       <div className="h-fit w-full bg-black overflow-hidden">

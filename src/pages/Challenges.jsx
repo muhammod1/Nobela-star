@@ -8,7 +8,7 @@ import ContNav from "../components/ContNav";
 const Challenges = () => {
   return (
     <div>
-      <div className="bg-black">
+      <div className="">
         <ContNav />
       </div>
       <div className="h-fit bg-black w-full overflow-hidden">

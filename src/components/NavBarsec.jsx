@@ -10,8 +10,7 @@ const NavBarsec = ({ link }) => {
 
   return (
     <nav className="py-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
-
-      <Link to='/'>
+      <Link to="/">
         <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
       </Link>
       <div className="hidden laptop:flex text-[14px] text-blue gap-5 items-center font-semibold">
@@ -21,22 +20,19 @@ const NavBarsec = ({ link }) => {
         <a href="#content" className="py-3 px-5">
           Content
         </a>
-          <a 
-            href="#about"
-            className="py-3 px-5"
-          >
-            About
-          </a>
+        <a href="#about" className="py-3 px-5">
+          About
+        </a>
       </div>
-   
+
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
           <a
-              href="#ai_app"
-              className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"
-            >
-              use our AI
-            </a>
+            href="#ai_app"
+            className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"
+          >
+            use our AI
+          </a>
         </div>
       </div>
       <div
@@ -47,13 +43,14 @@ const NavBarsec = ({ link }) => {
       </div>
       {isActive && (
         <>
-        <div
-        onClick={() => setIsActive(!isActive)}
-        className="fixed right-0 z-50 bg-transparent shadow-2xl top-0 h-[100vh] w-[100%] transition ease-in-out delay-350"
-        />
-        <div className="fixed right-0 z-50 bg-blue shadow-2xl top-0 h-[100vh] w-[70%] transition ease-in-out delay-350">
-          <MobileNav setIsActive={setIsActive} />
-        </div>
+          <div
+            onClick={() => setIsActive(!isActive)}
+            className="fixed z-50 bg-[#334243] opacity-80 left-0  top-0 h-[100vh] cursor-pointer w-[100vw] transition ease-in-out delay-350"
+          />
+          
+          <div className="fixed right-0 z-50 bg-nav shadow-2xl top-0 h-[380px] w-[170px]  transition ease-in-out delay-350">
+            <MobileNav setIsActive={setIsActive} />
+          </div>
         </>
       )}
     </nav>

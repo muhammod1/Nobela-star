@@ -7,7 +7,7 @@ import ContNav from "../components/ContNav";
 const Oppotunity = () => {
   return (
     <div>
-      <div className="bg-black">
+      <div className="">
         {/* <NavBarTh /> */}
         <ContNav />
         <div className="h-fit bg-black w-full overflow-hidden">

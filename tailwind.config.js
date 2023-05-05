@@ -9,6 +9,7 @@ module.exports = {
           grey: "#92929D",
           pink: "#FF8A62",
           blue: "#18A0FB",
+          nav: 'rgba(95, 191, 219, 0.9)',
           bluep: 'rgba(100, 204, 235, 0.4)',
           light: "rgba(245, 211, 16, 0.1)",
           'linear-bg': "rgba(25,27,38,.4)"

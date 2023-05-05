@@ -8,7 +8,7 @@ import ContNav from "../components/ContNav";
 const Future = () => {
   return (
     <div>
-      <div className="bg-black">
+      <div className="">
         <ContNav />
       </div>
         <div className="h-fit w-full overflow-hidden">

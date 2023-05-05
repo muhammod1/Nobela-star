@@ -2,7 +2,6 @@ import React from "react";
 import AiCon from "../assets/intro.svg"
 import lessthan from "../assets/lessthan.svg"
 import Footer from "../components/Footer";
-import NavBarTh from "../components/NavBarTh";
 import ContNav from "../components/ContNav";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,7 @@ import { Link } from "react-router-dom";
 const Introduction = () => {
   return (
     <div>
-      <div className="bg-black">
+      <div className="">
         <ContNav />
       </div>
         <div className="h-fit w-full bg-black  overflow-hidden">
