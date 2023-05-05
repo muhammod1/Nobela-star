@@ -64,11 +64,11 @@ const AiCont = () => {
         src={AiCon}
         alt="ai"
       />
-      <div className="relative py-5 z-10">
-        <p className="font-[700] text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
+      <div className="relative py-0 tab:py-5 z-10">
+        <p className="font-[700]  text-[20px] tab:text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
           Learning about AI [Artificial Intelligence] is made easy
         </p>
-        <div className=" flex-wrap gap-5 justify-center tablet_l:justify-between hidden tablet_l:flex">
+        <div className=" flex-wrap gap-2 tab:gap-5 justify-center tablet_l:justify-between hidden tablet_l:flex">
           {note.map((item) => (
             <div
               key={item.id}
@@ -104,21 +104,21 @@ const AiCont = () => {
             </div>
           ))}
         </div>
-        <div className="flex tablet_l:hidden flex-wrap gap-5 justify-center tablet_l:justify-between">
+        <div className="flex tablet_l:hidden flex-wrap gap-2 tab:gap-5 justify-center tablet_l:justify-between">
           {note.map((item) => (
             <Link
             to={item.link}
               key={item.id}
-              className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[3px] tablet_l:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
+              className="flex tablet_l:block w-[95%] tablet_l:w-[45%] pb-3 tablet_l:pb-5 border-[1px] tab:border-[2px] tablet_l:border-0 border-b-blue border-l-0 border-t-0 border-r-0"
             >
               <div className="">
-                <p className="font-[600] text-[20px] tab:text-[20px]">
+                <p className="font-[600] text-[18px] tab:text-[20px]">
                   {item.title}
                 </p>
-                <p className="text-[18px] hidden tablet_l:block font-[500] leading-8 mt-2 mb-5">
+                <p className="text-[16px] hidden tablet_l:block font-[500] leading-8 mt-2 mb-5">
                   {item.desc}
                 </p>
-                <p className="tablet_l:hidden text-[16px] font-[500] mt-2 ">
+                <p className="tablet_l:hidden text-[14px] font-[500] mt-2 ">
                   {item.desc2}
                 </p>
                   <Link
