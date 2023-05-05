@@ -23,7 +23,7 @@ const Home = () => {
     if (width > 768) {
       const interval = setInterval(() => {
         setfirst(false)
-      }, [1000000]);
+      }, [10000]);
       return () => clearInterval(interval);
     }
   }, [width]);
@@ -34,7 +34,7 @@ const Home = () => {
      {first && (
      <div className="hidden laptop:flex w-[100vw] h-[100vh] fixed z-50 bg-[#fff] justify-center items-center">
         <div className="w-fit h-fit m-auto">
-          <div onClick={() => setfirst(false)} className="flex gap-2 items-center cursor-pointer w-fit mx-auto text-blue text-[12px] relative -right-24" >Go to Home page <AiOutlineRight /> </div>
+          <div onClick={() => setfirst(false)} className="flex gap-2 items-center cursor-pointer w-fit mx-auto text-blue text-[12px] relative -right-32" >Go to Home page <AiOutlineRight /> </div>
           <img className="w-[45%] m-auto " src={Qr} alt="" />
           <div  className="w-fit mx-auto text-[20px] tab:text-[26px]" >Scan to View on mobile</div>
         </div>
