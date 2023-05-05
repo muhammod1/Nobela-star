@@ -7,7 +7,7 @@ import ContNav from "../components/ContNav";
 
 const Benefit = () => {
   return (
-    <div className="bg-light">
+    <div className="">
       <div className="bg-black">
         <ContNav />
       </div>

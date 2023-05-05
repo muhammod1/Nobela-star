@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Application = () => {
   
   return (
-    <div className="bg-light">
+    <div className="">
       <div className="bg-black">
         {/* <NavBarTh /> */}
         <ContNav />
