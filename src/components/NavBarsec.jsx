@@ -37,7 +37,7 @@ const NavBarsec = ({ link }) => {
       </div>
       <div
         onClick={() => setIsActive(!isActive)}
-        className="my-auto block laptop:hidden "
+        className="cursor-pointer my-auto block laptop:hidden "
       >
         <AiOutlineMenu className="w-[30px] h-[30px]" />
       </div>

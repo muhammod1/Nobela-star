@@ -1,16 +1,18 @@
 import React from "react";
 import cancle from "../assets/cancle.svg";
 
-
 const MobileNav = ({ setIsActive }) => {
   return (
     <div>
-          <img src={cancle} 
-        className="font-[600] w-[25px] h-[25px] text-[#fff]  ml-auto mr-10 mt-3"
-        alt=''/>
+      <img
+        src={cancle}
+        onClick={() => setIsActive(false)}
+        className="cursor-pointer font-[600] w-[25px] h-[25px] ml-auto mr-3 mt-3"
+        alt=""
+      />
 
       <div className="mt-3 flex flex-col">
-      <a
+        <a
           href="/"
           onClick={() => setIsActive(false)}
           className="block my-5 mx-4 pb-3 font-bold text-[18px] text-[#fff]"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import vd from '../../assets/herovd.mp4';
 import About from "../../components/About";
 import AIApp from "../../components/AIApp";
@@ -8,6 +8,7 @@ import Road from "../../components/Road";
 import Footer from "../../components/Footer";
 
 const Home = () => {
+  // const [first, setfirst] = useState(true)
   return (
     <div className="">
       <div className="w-full z-50">

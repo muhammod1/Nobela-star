@@ -25,7 +25,7 @@ const Footer = () => {
 
         <div>
           <a href="https://github.com/NOBELA-STAR/Nobela-star" className="font-[700] text-[10px] mobile:text-[12px] tablet:text-[16px] flex flex-col justify-end leading-5">
-            <span className="w-fit ml-auto">Github</span> <p>Repository</p>
+            <span className="w-fit ml-auto">Github</span> <span>Repository</span>
           </a>
         </div>
       </div>
