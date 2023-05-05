@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import serach from "../assets/serach.svg";
 import MobileNav from "./MobileNav";
 
 const NavBarsec = ({ link }) => {
@@ -24,6 +25,7 @@ const NavBarsec = ({ link }) => {
           About
         </a>
       </div>
+      
 
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
         <div className="flex gap-6  my-auto">
@@ -35,6 +37,11 @@ const NavBarsec = ({ link }) => {
           </a>
         </div>
       </div>
+
+      <div>
+        <img  src={serach} alt=''  />
+      </div>
+
       <div
         onClick={() => setIsActive(!isActive)}
         className="cursor-pointer my-auto block laptop:hidden "

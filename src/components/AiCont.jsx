@@ -65,7 +65,7 @@ const AiCont = () => {
         alt="ai"
       />
       <div className="relative py-0 tab:py-5 z-10">
-        <p className="font-[700]  text-[20px] tab:text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
+        <p className=" px-3 font-[700]  text-[20px] tab:text-[26px] tablet_l:text-[36px] leading-12 my-6 w-[100%] tablet_l:w-[550px]">
           Learning about AI [Artificial Intelligence] is made easy
         </p>
         <div className=" flex-wrap gap-2 tab:gap-5 justify-center tablet_l:justify-between hidden tablet_l:flex">
