@@ -24,12 +24,14 @@ const Road = () => {
           >
             Use our AI
           </a>
-          <Link
-            to="https://whatsapp.com/dl/"
+          <button
+           onClick={() =>
+            window.open("https://whatsapp.com/dl/", "_blank")
+          }
             className="text-blue bg-white px-4 py-3 font-bold rounded-lg"
           >
             Contact us
-          </Link>
+          </button>
         </div>
       </div>
     </div>

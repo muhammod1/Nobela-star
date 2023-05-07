@@ -78,7 +78,7 @@ const Home = () => {
               </video>
             </div>
           </div>
-          <div className="absolute w-full mx-auto top-[25%] tablet:top-[45%] ">
+          <div className="absolute w-full mx-auto top-[15%] tablet:top-[45%] ">
             <div className="w-fit mx-auto flex justify-center flex-col">
               <p
                 className="text-[#18A0FB] w-fit tracking-wider
@@ -89,7 +89,7 @@ const Home = () => {
               <div className="flex gap-6  my-auto">
                 <a
                   href="#ai_app"
-                  className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"
+                  className="text-white py-2 mt-4 px-5  rounded-md bg-[#18A0FB] mx-auto"
                 >
                   use our AI
                 </a>
