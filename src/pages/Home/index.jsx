@@ -7,7 +7,7 @@ import AiCont from "../../components/AiCont";
 import NavBarsec from "../../components/NavBarsec";
 import Road from "../../components/Road";
 import Footer from "../../components/Footer";
-import { AiOutlineRight} from 'react-icons/ai'
+import { AiOutlineRight } from "react-icons/ai";
 
 const Home = () => {
   const [first, setfirst] = useState(true);
@@ -22,24 +22,30 @@ const Home = () => {
   useEffect(() => {
     if (width > 768) {
       const interval = setInterval(() => {
-        setfirst(false)
+        setfirst(false);
       }, [10000]);
       return () => clearInterval(interval);
     }
   }, [width]);
 
-  
   return (
     <div className="">
-     {first && (
-     <div className="hidden laptop:flex w-[100vw] h-[100vh] fixed z-50 bg-[#fff] justify-center items-center">
-        <div className="w-fit h-fit m-auto">
-          <div onClick={() => setfirst(false)} className="flex gap-2 items-center cursor-pointer w-fit mx-auto text-blue text-[12px] relative -right-32" >Go to Home page <AiOutlineRight /> </div>
-          <img className="w-[45%] m-auto " src={Qr} alt="" />
-          <div  className="w-fit mx-auto text-[20px] tab:text-[26px]" >Scan to View on mobile</div>
+      {first && (
+        <div className="hidden laptop:flex w-[100vw] h-[100vh] fixed z-50 bg-[#fff] justify-center items-center">
+          <div className="w-fit h-fit m-auto">
+            <div
+              onClick={() => setfirst(false)}
+              className="flex gap-2 items-center cursor-pointer w-fit mx-auto text-blue text-[12px] relative -right-32"
+            >
+              Go to Home page <AiOutlineRight />{" "}
+            </div>
+            <img className="w-[45%] m-auto " src={Qr} alt="" />
+            <div className="w-fit mx-auto text-[20px] tab:text-[26px]">
+              Scan to View on mobile
+            </div>
+          </div>
         </div>
-      </div>)
-}
+      )}
       <div className="w-full z-50">
         <NavBarsec />
       </div>
@@ -80,6 +86,14 @@ const Home = () => {
               >
                 WELCOME TO LEARNING AI
               </p>
+              <div className="flex gap-6  my-auto">
+                <a
+                  href="#ai_app"
+                  className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"
+                >
+                  use our AI
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -90,8 +104,6 @@ const Home = () => {
         <Footer />
         <div className="h-1" />
       </header>
-      
-      
     </div>
   );
 };

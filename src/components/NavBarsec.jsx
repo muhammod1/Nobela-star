@@ -26,22 +26,27 @@ const NavBarsec = ({ link }) => {
           About
         </a>
       </div>
-      
 
       <div className=" hidden laptop:flex align-middle font-[500] text-[16px] text-grey">
-        <div className="flex gap-6  my-auto">
-          <a
-            href="#ai_app"
-            className="text-white py-2 px-5  rounded-md bg-[#18A0FB] mx-auto"
-          >
-            use our AI
-          </a>
-        </div>
+      <button
+        className="w-[200px] my-auto h-fit gap-10 bg-blue px-5 py-1 rounded-md hidden laptop:flex"
+        onClick={() => {
+          window.open("https://www.google.com");
+        }}
+      >
+        <BsSearch className="my-auto text-[#fff] w-[15px] h-[15px] " />
+        <p className="text-[#fff] ">Search</p>
+      </button>
       </div>
 
-      <div className="my-auto h-fit bg-blue p-3 rounded-full laptop:hidden">
+      <button
+        className="my-auto h-fit bg-blue hover:bg-bluep p-3 rounded-full laptop:hidden"
+        onClick={() => {
+          window.open("https://www.google.com");
+        }}
+      >
         <BsSearch className="my-auto text-[#fff] w-[25px] h-[25px] " />
-      </div>
+      </button>
 
       <div
         onClick={() => setIsActive(!isActive)}
@@ -55,7 +60,7 @@ const NavBarsec = ({ link }) => {
             onClick={() => setIsActive(!isActive)}
             className="fixed z-50 bg-[#334243] opacity-80 left-0  top-0 h-[100vh] cursor-pointer w-[100vw] transition ease-in-out delay-350"
           />
-          
+
           <div className="fixed right-0 z-50 bg-nav shadow-2xl top-0 h-[380px] w-[170px]  transition ease-in-out delay-350">
             <MobileNav setIsActive={setIsActive} />
           </div>
