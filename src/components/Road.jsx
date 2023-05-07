@@ -18,15 +18,18 @@ const Road = () => {
           </p>
         </div>
         <div className=" bg-blue flex text-[12px] mobile:text-[14px] gap-2 tablet:text-[16px] tablet:gap-8 justify-between tablet:justify-center m-auto">
-          <a href="#ai_app" className="bg-blue px-4 py-3 font-bold rounded-lg">
+          <a
+            href="#ai_app"
+            className="bg-blue px-4 py-3 font-bold rounded-lg"
+          >
             Use our AI
           </a>
-          <a
-            href="#content"
+          <Link
+            to="https://whatsapp.com/dl/"
             className="text-blue bg-white px-4 py-3 font-bold rounded-lg"
           >
-            Content
-          </a>
+            Contact us
+          </Link>
         </div>
       </div>
     </div>

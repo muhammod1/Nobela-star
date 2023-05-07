@@ -3,6 +3,7 @@ import uniLogo from "../assets/uniLogo.svg";
 import git from "../assets/git.svg";
 import twitter from "../assets/twitter.svg";
 import figma from "../assets/figma.svg";
+import { SiDiscord } from 'react-icons/si'
 import slack from "../assets/slack.svg";
 
 const Footer = () => {
@@ -40,9 +41,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex justify-center mt-4 tab:mt-10 tablet:mt-166">
-          <div>
-          <div className="mx-auto w-fit flex gap-2">
+        <div className="mx-auto flex justify-center mt-4 tab:mt-10 ">
+          <div className="mx-auto">
+          <div className="mx-auto w-fit flex gap-2 ">
               <div
                 onClick={() => {
                   window.open("https://github.com/muhammod1/Nobela-star");
@@ -51,6 +52,7 @@ const Footer = () => {
               >
                 <img className="w-full h-full" src={git} alt="" />
               </div>
+              
               <div
                 onClick={() => {
                   window.open("https://twitter.com/fuadUX");
@@ -68,6 +70,14 @@ const Footer = () => {
                 className="w-[15px] h-[15px] cursor-pointer"
               >
                 <img className="w-full h-full" src={figma} alt="" />
+              </div>
+              <div
+                onClick={() => {
+                  window.open("https://github.com/muhammod1/Nobela-star");
+                }}
+                className="w-[15px] h-[15px] cursor-pointer"
+              >
+               <SiDiscord />
               </div>
             </div>
             <p className="text-[10px] tablet:text-[10px] mt-4 font-semibold text-center">
