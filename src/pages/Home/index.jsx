@@ -50,7 +50,7 @@ const Home = () => {
         <NavBarsec />
       </div>
 
-      <header className="relative z-40 h-full tablet:h-[45vh] max-h-[600px] ">
+      <header className="relative z-40 h-full tablet:h-[100vh] max-h-[800px] ">
         <div className="bg- h-full w-full  justify-center items-center">
           <div className="relative h-full bg-black w-full overflow-hidden">
             <video
