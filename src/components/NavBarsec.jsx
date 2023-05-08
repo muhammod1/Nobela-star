@@ -12,7 +12,7 @@ const NavBarsec = ({ link }) => {
 
   return (
     <nav className="py-2 flex justify-between w-[97%] mx-auto max-w-[1430px]">
-      <Link to="/" className="bg-blue w-fit tablet laptop:w-[30%] laptop_l:w-[40%]">
+      <Link to="/" className="w-fit tablet laptop:w-[30%] laptop_l:w-[40%]">
         <img className=" h-[50px] mr-auto w-fit" src={logo} alt="logo" />
       </Link>
       <div className="w-fit tablet_l:w-[70%] laptop_l:w-[60%] hidden laptop:flex justify-between text-[14px] text-blue gap-5 items-center font-semibold">
@@ -41,7 +41,7 @@ const NavBarsec = ({ link }) => {
       </div>
 
       <button
-        className="my-auto mr-4 h-fit bg-blue hover:bg-bluep p-3 rounded-full laptop:hidden"
+        className="my-auto mr-5 h-fit bg-blue hover:bg-bluep p-3 rounded-full laptop:hidden"
         onClick={() => {
           window.open("https://www.google.com");
         }}
